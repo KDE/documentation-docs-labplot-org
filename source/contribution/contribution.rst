@@ -10,8 +10,8 @@ Contribution
 Documentation
 ##############
 
-The text of the documentation can be found on: ...
-The documentation is writting in the restructured text format: https://www.sphinx-doc.org/en/master/
+The source of the documentation can be found on: https://invent.kde.org/marmsoler/labplotdocumentation.git
+The documentation is writting in the reStructuredText format: https://www.sphinx-doc.org/en/master/
 
 .. _contribution_programming:
 

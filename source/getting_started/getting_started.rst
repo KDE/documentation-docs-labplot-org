@@ -1,14 +1,19 @@
 .. meta::
-   :description: Do Your First Steps in digiKam Photo Management Program
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :description: Do Your First Steps in labplot
 
 .. metadata-placeholder
 
-   :authors: - digiKam Team
+   :authors: - labplot Team
 
-   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+..   :license: see Credits and License page for details (https://docs.labplot.org/en/credits_license.html)
 
 .. _getting_started:
+
+.. figure:: ../resources/static/images/01_basic_plots_linux.png
+    :alt:
+    :target: getting_started.html
+
+    Do Your First Steps in Labplot
 
 .. toctree::
    :maxdepth: 2

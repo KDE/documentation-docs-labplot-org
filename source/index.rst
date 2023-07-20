@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. This is a comment and is not visible in the documentation.
+
 Welcome to Labplot's documentation!
 ===================================
 
@@ -22,10 +24,10 @@ Welcome to Labplot's documentation!
 ###############
 Getting Started
 ###############
-.. figure:: images/01_basic_plots_linux.png
+.. figure:: resources/static/images/01_basic_plots_linux.png
     :width: 300px
     :alt:
-    :target: getting_started.html
+    :target: getting_started/getting_started.html
 
     Do Your First Steps in Labplot
 
