@@ -29,8 +29,9 @@ author = 'Labplot Community'
 project_url = 'https://labplot.kde.org/'
 
 # The full version, including alpha/beta/rc tags
-release = '2.10'
-version = '2.10'
+with open("../VERSION.txt", "r") as version_file:
+    version = version_file.read()
+release = version
 
 # Get the git description if possible, to put it in the footer.
 
