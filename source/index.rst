@@ -24,8 +24,8 @@ Welcome to Labplot's documentation!
 ###############
 Getting Started
 ###############
+
 .. figure:: resources/static/images/01_basic_plots_linux.png
-    :width: 300px
     :alt:
     :target: getting_started/getting_started.html
 
@@ -48,6 +48,7 @@ Getting Started
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :glob:
 
    getting_started/getting_started.rst
 

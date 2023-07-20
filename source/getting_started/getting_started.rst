@@ -7,6 +7,9 @@
 
 ..   :license: see Credits and License page for details (https://docs.labplot.org/en/credits_license.html)
 
+Getting started
+===================
+
 .. _getting_started:
 
 .. figure:: ../resources/static/images/01_basic_plots_linux.png
@@ -19,6 +22,7 @@
    :caption: Contents:
    :glob:
 
-   application_intro.rst
-   application_install.rst
-   quick_start.rst
+   application_intro
+   application_install
+   quick_start
+   

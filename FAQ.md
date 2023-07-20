@@ -6,3 +6,8 @@ Check that the relative path is correct. The url can be seen as relative path.
 
 ## (           index: line   32) broken    getting_started/getting_started.html
 
+## File does not appear in Table of Content (TOC)
+Make sure that the file contains a title.
+
+## Document isn't included in any TOC tree
+
