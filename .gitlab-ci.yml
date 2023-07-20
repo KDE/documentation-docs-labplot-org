@@ -29,5 +29,5 @@ run_tests:
     - make -e SPHINXOPTS="-D language='zh_CH'" html
     # Run unit-tests
     - make test
-    - make linkcheck || true
+    - make linkcheck
 
