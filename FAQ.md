@@ -3,3 +3,6 @@ The paths are always relative to the .rst file: Changed to resources/static/imag
 
 ## figure target path is not working
 Check that the relative path is correct. The url can be seen as relative path.
+
+## (           index: line   32) broken    getting_started/getting_started.html
+

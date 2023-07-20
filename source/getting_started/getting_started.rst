@@ -11,7 +11,6 @@
 
 .. figure:: ../resources/static/images/01_basic_plots_linux.png
     :alt:
-    :target: getting_started.html
 
     Do Your First Steps in Labplot
 
