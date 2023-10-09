@@ -31,6 +31,15 @@ Getting Started
 
     Do Your First Steps in Labplot
 
+..  vimeo:: dQw4w9WgXcQ
+   :width: 640
+   :height: 480
+
+..  peertube:: 46d6ac9c-5298-4124-b003-0053d3e253ef
+   :width: 640
+   :height: 480
+   :instance: tube.kockatoo.org
+
 .. container:: toctile
 
     .. container:: tile no-descr
