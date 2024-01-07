@@ -25,18 +25,38 @@ As graphical git client [Gittyup](https://flathub.org/apps/com.github.Murmele.Gi
 ### VSCodium
 VSCodium is an extensible texteditor which is able to build the documentation and showing a preview of the changes.
 
+The application can be downloaded from:
+- Windows: https://vscodium.com/
+- Linux: https://flathub.org/apps/com.vscodium.codium
+- MacOS: **TODO**
+
+### VSCodium reStructuredText Plugin
+For easier writing the documentation the `reStructuredText` Plugin of VSCodium can be used. To install this Plugin start the application search for the Plugin and just install it.
+
+![VSCodiumreStructuredTextPluginInstallation](https://invent.kde.org/marmsoler/labplotdocumentation/-/raw/master/VSCodeRestructuredTextPlugin.png?ref_type=heads)
+
+### Clone (Download) the Documentation
+
+In order to contribute to the documentation wether you are an active KDE member or external you have to download the documentation:
+#### KDE member
+No need to fork the repository use in the next step the following link: git@invent.kde.org:marmsoler/labplotdocumentation.git
+
+#### External
+1) Register on https://invent.kde.org
+2) Fork the project (Making a copy of the documentation)
+![ForkProject](https://invent.kde.org/marmsoler/labplotdocumentation/-/raw/master/ForkProject.png?ref_type=heads)
+Use the 
 
 
 
-### Windows
 
-#### Requirements
-##### Git
-Git is a version control program used to track all changes to the documentation. To be able to contribute to this documentation download git from: https://git-scm.com/
-For easier version control overview you can also use a graphical git client like [Gittyup](https://murmele.github.io/Gittyup/).
-##### VSCodium
-An VSCodium is an IDE which is an extensible texteditor which supports showing a preview of the documentation. VSCodium is the Open Source variant of VSCode from Microsoft.
-This application can be downloaded from their [Homepage](https://vscodium.com/)
+
+
+
+
+
+
+
 
 
 
