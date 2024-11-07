@@ -10,17 +10,11 @@ This section will describe the installation process of all applications required
 ### GIT
 Git is a version control program used to track all changes to the documentation. To be able to contribute to this documentation and downloading the repository (Folder with the documentation) you need it.
 
-#### Windows
-You can download it from the official homepage: https://git-scm.com/. To track your changes easier, you can use a graphical git client like [Gittyup](https://murmele.github.io/Gittyup/)
+To have an easier overview a graphical user interface can be used:
 
-#### Linux
-Download it over you package manager
-Fedora / RHEL: `yum install git`
-Ubuntu: `apt install git`
-As graphical git client [Gittyup](https://flathub.org/apps/com.github.Murmele.Gittyup) can be used.
-
-#### MacOs
-**TODO**
+- Windows: [Gittyup](https://murmele.github.io/Gittyup/)
+- Linux: [Gittyup](https://flathub.org/apps/com.github.Murmele.Gittyup)
+- MacOs: **TODO**
 
 ### VSCodium
 VSCodium is an extensible texteditor which is able to build the documentation and showing a preview of the changes.
@@ -31,45 +25,33 @@ The application can be downloaded from:
 - MacOS: **TODO**
 
 ### VSCodium reStructuredText Plugin
+
 For easier writing the documentation the `reStructuredText` Plugin of VSCodium can be used. To install this Plugin start the application search for the Plugin and just install it.
 
-![VSCodiumreStructuredTextPluginInstallation](https://invent.kde.org/marmsoler/labplotdocumentation/-/raw/master/VSCodeRestructuredTextPlugin.png?ref_type=heads)
+![VSCodiumreStructuredTextPluginInstallation](resources/VSCodeRestructuredTextPlugin.png)
+
+### Sphinx
+- Ubuntu: `sudo apt install python3-sphinx python3-sphinx-rtd-theme python3-sphinxcontrib.youtube`
+- Fedora / RHEL: 
+    - `sudo dnf install python3-sphinx python3-sphinx_rtd_theme`
+    - `sudo dnf install python3-pip`
+    - `pip install sphinxcontrib-youtube`
 
 ### Clone (Download) the Documentation
 
 In order to contribute to the documentation wether you are an active KDE member or external you have to download the documentation:
 #### KDE member
-No need to fork the repository use in the next step the following link: git@invent.kde.org:marmsoler/labplotdocumentation.git
+No need to fork the repository use in the next step the following ssh link: git@invent.kde.org:marmsoler/labplotdocumentation.git
 
 #### External
 1) Register on https://invent.kde.org
 2) Fork the project (Making a copy of the documentation)
-![ForkProject](https://invent.kde.org/marmsoler/labplotdocumentation/-/raw/master/ForkProject.png?ref_type=heads)
+![ForkProject](resources/ForkProject.png)
 Use the 
 
+## Building the documentation
 
+- Windows: Execute the script `make.bat`
+- Linux / MacOs: Execute the makefile with the command `make html`
 
-
-
-
-
-
-
-
-
-
-
-
-1) Install 
-   Git is an application for version control. The 
-
-1) Execute the commands in `installRequirements.sh`
-2) Execute make.bat
-
-### Linux / MacOs
-1) Execute the makefile with the `make` command
-
-https://flathub.org/apps/com.vscodium.codium
-
-https://itsfoss.com/install-vscodium-ubuntu/
-https://flathub.org/apps/com.github.Murmele.Gittyup
+The main html file is in `build/html/index.html`. Open it in your browser and you will see the compiled documentation.
