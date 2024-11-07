@@ -29,7 +29,7 @@ Getting Started
 .. you will be redirected to that page
 .. figure:: resources/static/images/01_basic_plots_linux.png
     :alt:
-    :target: getting_started.html
+    :target: getting_started
 
     Do Your First Steps in Labplot
 
