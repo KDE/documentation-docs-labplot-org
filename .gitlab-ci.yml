@@ -11,6 +11,7 @@ run_tests:
   tags:
     - Linux
   script:
+    - pip install sphinxcontrib-youtube
     # Generate HTML English version
     - make html
     # Generate HTML Internationalized versions (respect alphabetic order)
