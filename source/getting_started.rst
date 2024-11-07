@@ -12,7 +12,7 @@ Getting started
 
 .. _getting_started:
 
-.. figure:: ../resources/static/images/01_basic_plots_linux.png
+.. figure:: resources/static/images/01_basic_plots_linux.png
     :alt:
 
     Do Your First Steps in Labplot
@@ -22,7 +22,7 @@ Getting started
    :caption: Contents:
    :glob:
 
-   application_intro
-   application_install
-   quick_start
+   getting_started/application_intro
+   getting_started/application_install
+   getting_started/quick_start
    

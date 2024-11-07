@@ -25,9 +25,11 @@ Welcome to Labplot's documentation!
 Getting Started
 ###############
 
+.. target defines a link to the next section. So when clicking on the image
+.. you will be redirected to that page
 .. figure:: resources/static/images/01_basic_plots_linux.png
     :alt:
-    :target: getting_started/getting_started.html
+    :target: getting_started.html
 
     Do Your First Steps in Labplot
 
@@ -59,7 +61,7 @@ Getting Started
    :hidden:
    :glob:
 
-   getting_started/getting_started.rst
+   getting_started
 
 ###############
 Interface

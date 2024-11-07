@@ -47,9 +47,17 @@ No need to fork the repository use in the next step the following ssh link: git@
 1) Register on https://invent.kde.org
 2) Fork the project (Making a copy of the documentation)
 ![ForkProject](resources/ForkProject.png)
-Use the 
+
+Use Gittyup to clone (creating a local copy of the repository):
+- Open Gittyup
+- `File -> Clone Repository`
+- Enter the documentation url determined above
+- Follow the instructions of the dialog.
 
 ## Building the documentation
+
+Editing can be done in VSCodium. There is also a live preview available with the above installed `restructuredText` plugin. So you don't need to compile the complete documentation all the time.
+To update the html documentation execute the following script:
 
 - Windows: Execute the script `make.bat`
 - Linux / MacOs: Execute the makefile with the command `make html`
