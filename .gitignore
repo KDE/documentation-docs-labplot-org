@@ -5,6 +5,7 @@ builds
 .vscode
 .DS_Store
 .*.kate-swp
+.venv
 
 # Explicitly prevent KDE l10n scripty from copying translation files to `po/`:
 # We already copy the translations to `locale/` using the `StaticMessage.sh`
