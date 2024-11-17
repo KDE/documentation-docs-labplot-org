@@ -23,7 +23,7 @@ The first step is to create a new project by selecting :menuselection:`File --> 
 
 This and many other common actions can be invoked from the main menu, a context menu, a toolbar button, or even via a keyboard shortcut.
 
-After the new project is created, you'll see **Project Explorer** on the left, showing the structure of the project, and also **Properties Explorer** on the right, showing the properties of the object currently selected in the project explorer.
+After the new project is created, you'll see ``Project Explorer`` on the left, showing the structure of the project, and also ``Properties Explorer`` on the right, showing the properties of the object currently selected in the ``Project Explorer``.
 
 The project is still empty and we're now going to add some content to it.
 

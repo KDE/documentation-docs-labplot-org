@@ -48,8 +48,12 @@ except subprocess.CalledProcessError as exc:
 # ones.
 extensions = [
     'sphinx_rtd_theme',
+    'sphinx_rtd_dark_mode',
     'sphinxcontrib.youtube',
 ]
+
+# user starts in light mode
+default_dark_mode = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['resources/templates']
