@@ -10,8 +10,10 @@ Contribution
 Documentation
 ##############
 
-The source of the documentation can be found on: https://invent.kde.org/marmsoler/labplotdocumentation.git
-The documentation is written in the reStructuredText format: https://www.sphinx-doc.org/en/master/
+The source of the documentation can be found on `GitLab <https://invent.kde.org/marmsoler/labplotdocumentation>`_.
+
+
+The documentation is written in the `Sphinx <https://www.sphinx-doc.org/en/master/>`_.
 
 .. _contribution_programming:
 
