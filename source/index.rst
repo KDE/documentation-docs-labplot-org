@@ -15,8 +15,12 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-Welcome to Labplot's documentation!
+LabPlot Manual
 ===================================
+
+Welcome to the manual for `LabPlot <https://labplot.kde.org/>`_, the FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone and trusted by professionals.
+
+You can download the current version of LabPlot `here <https://labplot.kde.org/download/>`_.
 
 .. toctree::
    :maxdepth: 2
@@ -35,13 +39,14 @@ Welcome to Labplot's documentation!
 Getting Started
 ###############
 
+This section describes first steps in LabPlot.
+
 .. target defines a link to the next section. So when clicking on the image
 .. you will be redirected to that page
 .. figure:: images/01_basic_plots_linux.png
-    :alt:
+    :alt: An image of LabPlot
+    :align: center
     :target: getting_started.html
-
-Do Your First Steps in Labplot
 
 .. Example how to link a video from peer tube
 .. There is also a possibility to link to youtube videos
@@ -49,8 +54,7 @@ Do Your First Steps in Labplot
    :width: 640
    :height: 480
    :instance: tube.kockatoo.org
-
-..  youtube:: _oNtu49wPFs
+   youtube:: _oNtu49wPFs
 
 .. container:: toctile
 
@@ -76,6 +80,8 @@ Do Your First Steps in Labplot
 Interface
 ###############
 
+This section describes the interface of LabPlot.
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -100,7 +106,7 @@ Interface
 Contribution
 ############
 
-Do you have experience in labplot and would like to contribute wether to the documentation or even extending the functionality of labplot? Check out the following chapters
+This section describes the interface how to contribute to LabPlot.
 
 .. container:: toctile
 
@@ -123,7 +129,7 @@ Credits and License
 ###################
 
 
-Copyrights and Notices for This Document
+Copyrights and notices for this document.
 
 .. container:: toctile
 

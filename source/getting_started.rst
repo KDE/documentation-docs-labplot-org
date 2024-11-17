@@ -11,12 +11,12 @@
 Getting started
 ===================
 
+This section provides an overview to quickly get you started using LabPlot.
+
 .. _getting_started:
 
 .. figure:: images/01_basic_plots_linux.png
     :alt:
-
-    Do Your First Steps in Labplot
 
 .. toctree::
    :maxdepth: 2
