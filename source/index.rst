@@ -5,6 +5,16 @@
 
 .. This is a comment and is not visible in the documentation.
 
+.. meta::
+   :description: The LabPlot User Manual
+   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn
+
+.. metadata-placeholder
+
+   :authors: - LabPlot Team
+
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+
 Welcome to Labplot's documentation!
 ===================================
 
@@ -27,9 +37,9 @@ Getting Started
 
 .. target defines a link to the next section. So when clicking on the image
 .. you will be redirected to that page
-.. figure:: resources/static/images/01_basic_plots_linux.png
+.. figure:: getting_started/images/01_basic_plots_linux.png
     :alt:
-    :target: getting_started
+    :target: getting_started/getting_started.html
 
     Do Your First Steps in Labplot
 
@@ -61,7 +71,7 @@ Getting Started
    :hidden:
    :glob:
 
-   getting_started
+   getting_started/getting_started
 
 ###############
 Interface
@@ -77,11 +87,16 @@ Interface
 
         :ref:`interface_project_explorer`
 
+    .. container:: tile no-descr
+
+        :ref:`interface_properties_explorer`
+
 .. toctree::
     :maxdepth: 2
     :hidden:
+    :glob:
 
-    interface/interface.rst
+    interface/interface
 
 ############
 Contribution
@@ -103,8 +118,23 @@ Do you have experience in labplot and would like to contribute wether to the doc
     :maxdepth: 2
     :hidden:
 
-    contribution/contribution.rst
+    contribution/contribution
+
+###################
+Credits and License
+###################
 
 
+Copyrights and Notices for This Document
 
+.. container:: toctile
 
+    .. container:: tile no-descr
+
+        :ref:`credits_license`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   credits_license
