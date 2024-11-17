@@ -20,7 +20,7 @@ Interface
    :caption: Contents:
    :glob:
 
-   interface_mainarea
-   interface_project_explorer
-   interface_properties_explorer
+   interface/interface_mainarea
+   interface/interface_project_explorer
+   interface/interface_properties_explorer
 

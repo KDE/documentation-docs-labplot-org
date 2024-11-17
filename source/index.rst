@@ -37,11 +37,11 @@ Getting Started
 
 .. target defines a link to the next section. So when clicking on the image
 .. you will be redirected to that page
-.. figure:: getting_started/images/01_basic_plots_linux.png
+.. figure:: images/01_basic_plots_linux.png
     :alt:
-    :target: getting_started/getting_started.html
+    :target: getting_started.html
 
-    Do Your First Steps in Labplot
+Do Your First Steps in Labplot
 
 .. Example how to link a video from peer tube
 .. There is also a possibility to link to youtube videos
@@ -69,9 +69,8 @@ Getting Started
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :glob:
 
-   getting_started/getting_started
+   getting_started
 
 ###############
 Interface
@@ -94,9 +93,8 @@ Interface
 .. toctree::
     :maxdepth: 2
     :hidden:
-    :glob:
 
-    interface/interface
+    interface
 
 ############
 Contribution
@@ -118,7 +116,7 @@ Do you have experience in labplot and would like to contribute wether to the doc
     :maxdepth: 2
     :hidden:
 
-    contribution/contribution
+    contribution
 
 ###################
 Credits and License

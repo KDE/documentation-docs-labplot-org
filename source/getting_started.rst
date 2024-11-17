@@ -23,7 +23,7 @@ Getting started
    :caption: Contents:
    :glob:
 
-   introduction
-   installation
-   quick_start
+   getting_started/introduction
+   getting_started/installation
+   getting_started/quick_start
    
