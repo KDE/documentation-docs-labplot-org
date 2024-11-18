@@ -5,8 +5,22 @@
 
 .. This is a comment and is not visible in the documentation.
 
-Welcome to Labplot's documentation!
+.. meta::
+   :description: The LabPlot User Manual
+   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn
+
+.. metadata-placeholder
+
+   :authors: - LabPlot Team
+
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+
+LabPlot Manual
 ===================================
+
+Welcome to the manual for `LabPlot <https://labplot.kde.org/>`_, the FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone and trusted by professionals.
+
+You can download the current version of LabPlot `here <https://labplot.kde.org/download/>`_.
 
 .. toctree::
    :maxdepth: 2
@@ -25,13 +39,14 @@ Welcome to Labplot's documentation!
 Getting Started
 ###############
 
+This section describes first steps in LabPlot.
+
 .. target defines a link to the next section. So when clicking on the image
 .. you will be redirected to that page
-.. figure:: resources/static/images/01_basic_plots_linux.png
-    :alt:
-    :target: getting_started
-
-    Do Your First Steps in Labplot
+.. figure:: images/01_basic_plots_linux.png
+    :alt: An image of LabPlot
+    :align: center
+    :target: getting_started.html
 
 .. Example how to link a video from peer tube
 .. There is also a possibility to link to youtube videos
@@ -39,8 +54,7 @@ Getting Started
    :width: 640
    :height: 480
    :instance: tube.kockatoo.org
-
-..  youtube:: _oNtu49wPFs
+   youtube:: _oNtu49wPFs
 
 .. container:: toctile
 
@@ -59,13 +73,14 @@ Getting Started
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :glob:
 
    getting_started
 
 ###############
 Interface
 ###############
+
+This section describes the interface of LabPlot.
 
 .. container:: toctile
 
@@ -77,17 +92,21 @@ Interface
 
         :ref:`interface_project_explorer`
 
+    .. container:: tile no-descr
+
+        :ref:`interface_properties_explorer`
+
 .. toctree::
     :maxdepth: 2
     :hidden:
 
-    interface/interface.rst
+    interface
 
 ############
 Contribution
 ############
 
-Do you have experience in labplot and would like to contribute wether to the documentation or even extending the functionality of labplot? Check out the following chapters
+This section describes the interface how to contribute to LabPlot.
 
 .. container:: toctile
 
@@ -103,8 +122,23 @@ Do you have experience in labplot and would like to contribute wether to the doc
     :maxdepth: 2
     :hidden:
 
-    contribution/contribution.rst
+    contribution
+
+###################
+Credits and License
+###################
 
 
+Copyrights and notices for this document.
 
+.. container:: toctile
 
+    .. container:: tile no-descr
+
+        :ref:`credits_license`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   credits_license
