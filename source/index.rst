@@ -6,7 +6,7 @@
 .. This is a comment and is not visible in the documentation.
 
 .. meta::
-   :description: The LabPlot User Manual
+   :description: The LabPlot 2.12 User Manual
    :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn
 
 .. metadata-placeholder
