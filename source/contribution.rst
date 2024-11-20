@@ -8,10 +8,10 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
+.. _contribution:
+
 Contribution
 ===================
-
-.. _contribution:
 
    Contribute to the LabPlot project.
 

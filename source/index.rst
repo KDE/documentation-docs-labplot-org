@@ -102,6 +102,32 @@ This section describes the interface of LabPlot.
 
     interface
 
+###############
+Data Containers
+###############
+
+This section describes the interface of LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`data_containers_spreadsheet`
+
+    .. container:: tile no-descr
+
+        :ref:`data_containers_matrix`
+
+    .. container:: tile no-descr
+
+        :ref:`data_containers_workbook`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    data_containers
+
 ############
 Contribution
 ############

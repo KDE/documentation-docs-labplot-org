@@ -8,12 +8,12 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
+.. _getting_started:
+
 Getting started
 ===================
 
 This section provides an overview to quickly get you started using LabPlot.
-
-.. _getting_started:
 
 .. figure:: images/01_basic_plots_linux.png
     :alt:
