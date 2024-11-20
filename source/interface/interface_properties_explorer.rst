@@ -5,7 +5,7 @@ Properties Explorer
 
 .. contents::
 
-Properties Explorer
+Basic Concepts
 --------------------
 
 .. figure:: images/LabPlot_MainWindow_properties_explorer.png
