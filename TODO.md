@@ -3,4 +3,4 @@
 - [ ] Currently the version/release is entered manually to the conf.py (Maybe adding to labplot repo to get be able to generate the version?
 
 *THE MAIN CONTENT*
-- [ ] Describe Worksheet, Folder in the Interface section
+- [ ] Describe Worksheet, Folder in the Interface section and add cross-references for these objects

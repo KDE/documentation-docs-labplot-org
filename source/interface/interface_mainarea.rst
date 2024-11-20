@@ -14,7 +14,6 @@ Basic Concepts
     :align: center
     :width: 650px
 
-
 :ref:`interface_mainarea` is the part of the application where the project object windows are shown. These windows represent the view of the different top-level project objects like :ref:`data_containers_spreadsheet`, `Worksheet`, etc. The child windows can be freely moved, minimized and maximized inside of the :ref:`interface_mainarea` as shown on the screenshot above.
 
 Alternatively, the windows can also be arranged in a tabbed view like on the following screenshot:
