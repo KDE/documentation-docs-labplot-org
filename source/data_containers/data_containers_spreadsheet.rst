@@ -42,7 +42,7 @@ Sometimes it is required to ignore some data points in the visualization or when
 
 In the example below a ``fit`` was performed to the original data containing some obvious measurement errors and a fit where those outliers were masked.
 
-.. todo:: screenshot with two fits
+.. todo:: add a screenshot with two fits
 
 Manipulate Data
 ~~~~~~~~~~~~~~~~~~~~~~~
