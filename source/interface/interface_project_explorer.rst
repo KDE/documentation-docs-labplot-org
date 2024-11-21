@@ -38,6 +38,8 @@ The example below shows the same project structure as in the previous example, b
     :align: center
     :width: 650px
 
+.. _folders:
+
 Folders
 -------------
 
