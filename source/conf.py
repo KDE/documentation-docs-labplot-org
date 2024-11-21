@@ -48,8 +48,13 @@ except subprocess.CalledProcessError as exc:
 # ones.
 extensions = [
     'sphinx_rtd_theme',
-    'sphinxcontrib.youtube'
+    'sphinxcontrib.youtube',
+    'sphinx.ext.todo'
 ]
+
+# Display todos by setting to True
+todo_include_todos = True
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['resources/templates']

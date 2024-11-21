@@ -41,11 +41,13 @@ Mask Data
 Sometimes it is required to ignore some data points in the visualization or when performing some data analysis like fitting etc. To exclude some data points from plotting and data analysis without deleting them, ``masking`` of those data points can be used. You can mask the selected data points in the :ref:`data_containers_spreadsheet` (:menuselection:`Selection` / :menuselection:`Mask Selection` from the :ref:`data_containers_spreadsheet` cell context menu).
 
 In the example below a ``fit`` was performed to the original data containing some obvious measurement errors and a fit where those outliers were masked.
-TODO: screenshot with two fits
 
-==Manipulate Data==
+.. todo:: screenshot with two fits
 
+Manipulate Data
+~~~~~~~~~~~~~~~~~~~~~~~
 
+.. todo:: add a description
 
 Descriptive Statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
