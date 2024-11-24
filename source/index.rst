@@ -150,6 +150,28 @@ This section describes the interface how to contribute to LabPlot.
 
     contribution
 
+############
+Worksheet
+############
+
+This section describes the worksheet object in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`worksheet_nav_zoom_pan`
+
+    .. container:: tile no-descr
+
+        :ref:`worksheet_layouts`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    worksheet
+
 ###################
 Credits and License
 ###################
