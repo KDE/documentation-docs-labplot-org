@@ -129,28 +129,6 @@ This section describes the interface of LabPlot.
     data_containers
 
 ############
-Contribution
-############
-
-This section describes the interface how to contribute to LabPlot.
-
-.. container:: toctile
-
-    .. container:: tile no-descr
-
-        :ref:`contribution_documentation`
-
-    .. container:: tile no-descr
-
-        :ref:`contribution_programming`
-
-.. toctree::
-    :maxdepth: 2
-    :hidden:
-
-    contribution
-
-############
 Worksheet
 ############
 
@@ -171,6 +149,28 @@ This section describes the worksheet object in LabPlot.
     :hidden:
 
     worksheet
+
+############
+Contribution
+############
+
+This section describes the interface how to contribute to LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`contribution_documentation`
+
+    .. container:: tile no-descr
+
+        :ref:`contribution_programming`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    contribution
 
 ###################
 Credits and License
