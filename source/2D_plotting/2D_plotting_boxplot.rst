@@ -59,8 +59,13 @@ Jittering
 ---------------
 Box plots are most useful for emphasizing summary statistics but convey no information about whether there are, for example, multiple peaks, gaps or clusters in the distribution. To overcome their misleading potential, all data points can be added on top of boxes, using ``jittering`` (adding random noise over the data points) to avoid over-plotting.
 
-Furthermore, in addition to jittering, a combined visualization of histogram and box plot can be used to provide more insights. The example below shows five datasets (taken from `Same stats, different graphs <https://www.autodesk.com/research/publications/same-stats-different-graphs>`_ having completely different distribution but leading to the same box plot visualizations:
-[[File:LabPlot boxplot jitter histogram.png|800px|thumb|center]]
+Furthermore, in addition to jittering, a combined visualization of histogram and box plot can be used to provide more insights. The example below shows five datasets (taken from `Same stats, different graphs <https://www.research.autodesk.com/publications/same-stats-different-graphs/>`_) having completely different distribution but leading to the same box plot visualizations:
+
+.. figure:: images/LabPlot boxplot jitter histogram.png
+    :alt:
+    :align: center
+    :width: 650px
+
 Here, jittering together with histograms helps to reveal the different distributions.
 
 Notched box plot
