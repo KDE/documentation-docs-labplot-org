@@ -61,7 +61,7 @@ Box plots are most useful for emphasizing summary statistics but convey no infor
 
 Furthermore, in addition to jittering, a combined visualization of histogram and box plot can be used to provide more insights. The example below shows five datasets (taken from `Same stats, different graphs <https://www.research.autodesk.com/publications/same-stats-different-graphs/>`_) having completely different distribution but leading to the same box plot visualizations:
 
-.. figure:: images/LabPlot boxplot jitter histogram.png
+.. figure:: images/LabPlot_boxplot_jitter_histogram.png
     :alt:
     :align: center
     :width: 650px
