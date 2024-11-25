@@ -151,6 +151,56 @@ This section describes the worksheet object in LabPlot.
     worksheet
 
 ############
+2D Plotting
+############
+
+This section describes 2D plots available in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`2D_plotting_xycurve`
+
+    .. container:: tile no-descr
+
+        :ref:`2D_plotting_histogram`
+
+    .. container:: tile no-descr
+
+        :ref:`2D_plotting_boxplot`
+
+    .. container:: tile no-descr
+
+        :ref:`2D_plotting_xycurve_formula`
+
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    2D_plotting
+
+###################
+Statistics
+###################
+
+
+This section describes how to do basic statistics in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`statistics`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   statistics
+
+############
 Contribution
 ############
 
