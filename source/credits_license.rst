@@ -13,12 +13,11 @@
 Credits and License
 ===================
 
-.. contents::
 
 Documentation copyright
 -----------------------
 
-    Content is licensed under the terms of `Creative Commons License SA 4.0 unless stated otherwise <https://spdx.org/licenses/CC-BY-4.0.html>`_.
+Content is licensed under the terms of `Creative Commons License SA 4.0 unless stated otherwise <https://spdx.org/licenses/CC-BY-4.0.html>`_.
 
 
 Documentation authors

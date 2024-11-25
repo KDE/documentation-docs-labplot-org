@@ -200,6 +200,28 @@ This section describes how to do basic statistics in LabPlot.
 
    statistics
 
+########################
+Themes and Templates
+########################
+
+This section describes the worksheet object in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`worksheet_nav_zoom_pan`
+
+    .. container:: tile no-descr
+
+        :ref:`worksheet_layouts`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    themes
+
 ############
 Contribution
 ############

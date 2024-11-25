@@ -22,9 +22,9 @@ Main Components
     :width: 650px
 
 Besides the usual GUI components like the main `menu bar`, the `tool bars` and the `status bar`, the main window of the application consists out of three main components:
-* :ref:`interface_project_explorer`
-* :ref:`interface_mainarea`
-* :ref:`interface_properties_explorer`
+- :ref:`interface_project_explorer`
+- :ref:`interface_mainarea`
+- :ref:`interface_properties_explorer`
 
 :ref:`interface_project_explorer` and :ref:`interface_properties_explorer` are the so-called `dock widgets` and their positions inside the main window can be freely changed. The screenshot below shows a different arrangement of the dock widgets where the :ref:`interface_project_explorer` was put to the bottom of the main window and the :ref:`interface_properties_explorer` was placed on the right hand side:
 
