@@ -200,6 +200,79 @@ This section describes how to do basic statistics in LabPlot.
 
    statistics
 
+##############
+Data Analysis
+##############
+
+This section describes LabPlot's data analysis tools.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_fitting`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_smoothing`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_curve_fitting`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_interpolation`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_integration`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_differentiation`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_fourier_transform`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_hilbert_transform`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_fourier_filter`
+
+    .. container:: tile no-descr
+
+        :ref:`data_analysis_data_reduction`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    data_analysis
+
+########################
+Computational Notebooks
+########################
+
+
+This section describes Computational Notebooks.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`computational_notebooks`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   computational_notebooks
+
 ########################
 Themes and Templates
 ########################
@@ -221,6 +294,7 @@ This section describes the worksheet object in LabPlot.
     :hidden:
 
     themes
+
 
 ############
 Contribution
