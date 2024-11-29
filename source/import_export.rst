@@ -1,0 +1,43 @@
+.. meta::
+   :description: A description of LabPlot's import and export functionality.
+   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn, import, export, data
+.. metadata-placeholder
+
+   :authors: - LabPlot Team
+
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+
+.. _import_export:
+
+Import and Export
+===================
+
+    A description of LabPlot's data analysis tools.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :glob:
+
+   import_export/import_export_files
+   import_export/import_export_sql
+   import_export/import_export_labplot_origin
+   import_export/import_export_export
+
+LabPlot supports the import of data from various file formats. The current list of supported formats is:
+
+- ASCII
+- Binary
+- SAS
+- Stata
+- SPSS
+- MATLAB
+- OpenDocument Spreadsheets (ods)
+- Excel (xlsx)
+- HDF5
+- FITS
+- netCDF
+- ROOT (CERN)
+- LTspice
+- Ngspice
+- Binary Logging Format (BLF)

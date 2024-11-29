@@ -273,6 +273,36 @@ This section describes Computational Notebooks.
 
    computational_notebooks
 
+##################
+Import and Export
+##################
+
+This section describes import and export functionality.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`import_export_files`
+
+    .. container:: tile no-descr
+
+        :ref:`import_export_sql`
+
+    .. container:: tile no-descr
+
+        :ref:`import_export_labplot_origin`
+
+    .. container:: tile no-descr
+
+        :ref:`import_export_export`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    import_export
+
 ########################
 Themes and Templates
 ########################
