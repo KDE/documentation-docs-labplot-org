@@ -15,7 +15,7 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-LabPlot User Guide
+LabPlot User Manual
 ===================================
 
 Welcome to the manual for `LabPlot <https://labplot.kde.org/>`_, the FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone and trusted by professionals.
