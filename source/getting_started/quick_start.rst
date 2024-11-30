@@ -3,6 +3,8 @@
 Quick Start
 ===========
 
+This page contains a quick start tutorial. Please also check out introduction videos on YouTube `YouTube <https://www.youtube.com/watch?v=Ngf1g3S5C0A&list=PL_dfQNSnql9Ol0zRBnPU8kcTGUwqq4JkJ>`_ or `PeerTube <https://tube.kockatoo.org/c/labplot/videos>`_.
+
 Import and visualization of data with LabPlot can be done in 5 easy steps.
 
 .. contents::
