@@ -1,12 +1,10 @@
 .. meta::
-   :description: Copyrights And Notices About This document
-   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn, statistics
+   :description: A description of statistical functions in LabPlot
+   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn, statistics, median, mean, standard deviation
 
 .. metadata-placeholder
 
    :authors: - LabPlot Team
-
-   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
 .. _statistics:
 

@@ -13,8 +13,6 @@
 
    :authors: - LabPlot Team
 
-   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
-
 LabPlot User Manual
 ===================================
 
