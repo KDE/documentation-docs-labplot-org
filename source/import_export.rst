@@ -23,21 +23,3 @@ Import and Export
    import_export/import_export_sql
    import_export/import_export_labplot_origin
    import_export/import_export_export
-
-LabPlot supports the import of data from various file formats. The current list of supported formats is:
-
-- ASCII
-- Binary
-- SAS
-- Stata
-- SPSS
-- MATLAB
-- OpenDocument Spreadsheets (ods)
-- Excel (xlsx)
-- HDF5
-- FITS
-- netCDF
-- ROOT (CERN)
-- LTspice
-- Ngspice
-- Binary Logging Format (BLF)

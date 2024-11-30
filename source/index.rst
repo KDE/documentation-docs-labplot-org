@@ -259,7 +259,7 @@ Computational Notebooks
 ########################
 
 
-This section describes Computational Notebooks.
+This section describes how to work with Computational Notebooks in LabPlot.
 
 .. container:: toctile
 
@@ -324,6 +324,42 @@ This section describes the worksheet object in LabPlot.
     :hidden:
 
     themes
+
+########################
+LaTeX Typesetting
+########################
+
+This section describes how to use LaTeX Typesetting in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`latex_typesetting`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   latex_typesetting
+
+########################
+Data Extractor
+########################
+
+This section describes how to use the Data Extractor tool in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`data_extractor`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   data_extractor
 
 
 ############
