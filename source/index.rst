@@ -361,6 +361,27 @@ This section describes how to use the Data Extractor tool in LabPlot.
 
    data_extractor
 
+#########
+Tools
+#########
+
+This section describes how to use a set of specialized tools in LabPlot.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`tools_cursor`
+
+    .. container:: tile no-descr
+
+        :ref:`tools_fits_editor`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    tools
 
 ############
 Contribution
