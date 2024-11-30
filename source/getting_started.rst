@@ -24,6 +24,6 @@ This section provides an overview to quickly get you started using LabPlot.
    :glob:
 
    getting_started/introduction
-   getting_started/installation
+   getting_started/features
    getting_started/quick_start
    

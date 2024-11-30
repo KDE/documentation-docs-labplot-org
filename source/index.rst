@@ -18,9 +18,13 @@
 LabPlot User Manual
 ===================================
 
-Welcome to the manual for `LabPlot <https://labplot.kde.org/>`_, the FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone and trusted by professionals.
+Welcome to the manual for `LabPlot <https://labplot.kde.org/>`_, the FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone and trusted by `professionals <https://labplot.kde.org/references/>`_.
 
-You can download the current version of LabPlot `here <https://labplot.kde.org/download/>`_.
+Here's a quick overview of :ref:`application_features`.
+
+You can download the current version of LabPlot `here <https://labplot.kde.org/download/>`_. Check out `what’s new <https://invent.kde.org/education/labplot/-/blob/master/ChangeLog>`_.
+
+If you have any questions, please go to the `FAQ <https://labplot.kde.org/frequently-asked-questions/>`_ page or the `Support page <https://labplot.kde.org/support/>`_.
 
 .. toctree::
    :maxdepth: 2
@@ -64,7 +68,7 @@ This section describes first steps in LabPlot.
 
     .. container:: tile no-descr
 
-        :ref:`application_install`
+        :ref:`application_features`
 
     .. container:: tile no-descr
 
@@ -382,28 +386,6 @@ This section describes how to use a set of specialized tools in LabPlot.
     :hidden:
 
     tools
-
-############
-Contribution
-############
-
-This section describes the interface how to contribute to LabPlot.
-
-.. container:: toctile
-
-    .. container:: tile no-descr
-
-        :ref:`contribution_documentation`
-
-    .. container:: tile no-descr
-
-        :ref:`contribution_programming`
-
-.. toctree::
-    :maxdepth: 2
-    :hidden:
-
-    contribution
 
 ###################
 Credits and License
