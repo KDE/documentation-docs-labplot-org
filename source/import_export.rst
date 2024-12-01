@@ -19,6 +19,7 @@ Import and Export
    :glob:
 
    import_export/import_export_files
+   import_export/import_live_data
    import_export/import_export_sql
    import_export/import_export_labplot_origin
    import_export/import_export_export

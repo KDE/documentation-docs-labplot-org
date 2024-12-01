@@ -289,6 +289,10 @@ This section describes import and export functionality.
 
     .. container:: tile no-descr
 
+        :ref:`import_live_data`
+
+    .. container:: tile no-descr
+
         :ref:`import_export_sql`
 
     .. container:: tile no-descr
