@@ -42,9 +42,9 @@
     border-radius: .3em;
     user-select: none;
 }
-.tile div.figure,
-.tile figure {
-    margin-bottom: 0px;
+div.figure, figure {
+    margin-bottom: 1em;
+    padding: 1em;
     display: block;
 }
 .tile img {

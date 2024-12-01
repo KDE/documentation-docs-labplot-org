@@ -1,19 +1,17 @@
 .. meta::
    :description: Do Your First Steps in LabPlot
-   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn, first steps
+   :keywords: LabPlot, documentation, user manual, data analysis, data visualization, curve fitting, open source, free, help, learn, first steps, introduction, tutorial
 
 .. metadata-placeholder
 
    :authors: - LabPlot Team
 
-   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+.. _getting_started:
 
 Getting started
 ===================
 
 This section provides an overview to quickly get you started using LabPlot.
-
-.. _getting_started:
 
 .. figure:: images/01_basic_plots_linux.png
     :alt:
@@ -24,6 +22,6 @@ This section provides an overview to quickly get you started using LabPlot.
    :glob:
 
    getting_started/introduction
-   getting_started/installation
+   getting_started/features
    getting_started/quick_start
    

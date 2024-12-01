@@ -6,12 +6,10 @@
 
    :authors: - LabPlot Team
 
-   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+.. _interface:
 
 Interface
 ===================
-
-.. _interface:
 
     A description of LabPlot's interface.
 
@@ -20,7 +18,7 @@ Interface
    :caption: Contents:
    :glob:
 
+   interface/interface_introduction
    interface/interface_mainarea
    interface/interface_project_explorer
    interface/interface_properties_explorer
-
