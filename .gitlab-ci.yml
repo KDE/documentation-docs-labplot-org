@@ -1,38 +1,21 @@
 # SPDX-FileCopyrightText: 2022-2023 Gilles Caulier <caulier dot gilles at gmail dot com>
 # SPDX-License-Identifier: CC0-1.0
 
+include:
+  - project: sysadmin/ci-utilities
+    file:
+      - /gitlab-templates/website-sphinx-app-docs.yml
+variables:
+    EPUB_NAME: LabplotManual
+    WEBSITE_LANGUAGES: ca cs de es fi fr it lt nl pt_PT sk uk_UA zh_CH
+
 run_tests:
   stage: test
   image: invent-registry.kde.org/sysadmin/ci-images/staticweb:latest
-  only:
-    - branches
-    - merge_requests
-    - tags
   tags:
     - Linux
   script:
-    - pip install sphinxcontrib-youtube
-    # Generate HTML English version
-    - make html
-    # Generate HTML Internationalized versions (respect alphabetic order)
-    - make -e SPHINXOPTS="-D language='ca'"    html
-    - make -e SPHINXOPTS="-D language='cs'"    html
-    - make -e SPHINXOPTS="-D language='de'"    html
-    - make -e SPHINXOPTS="-D language='es'"    html
-    - make -e SPHINXOPTS="-D language='fi'"    html
-    - make -e SPHINXOPTS="-D language='fr'"    html
-    - make -e SPHINXOPTS="-D language='it'"    html
-    - make -e SPHINXOPTS="-D language='lt'"    html
-    - make -e SPHINXOPTS="-D language='nl'"    html
-    - make -e SPHINXOPTS="-D language='pt_PT'" html
-    - make -e SPHINXOPTS="-D language='sk'"    html
-    - make -e SPHINXOPTS="-D language='uk_UA'" html
-    - make -e SPHINXOPTS="-D language='zh_CH'" html
     # Run unit-tests
     - make test
-    # ignore result of linkcheck because it raises an error but when fixing the error
-    # The resulting links in the final html do not work anymore
-    # Introduced with c0bb0f84cb8b5f73a9df90bf832572208572e4e8
-    # https://github.com/sphinx-doc/sphinx/issues/9383
     - make linkcheck || true
 
