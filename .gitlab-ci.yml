@@ -7,6 +7,7 @@ include:
       - /gitlab-templates/website-sphinx-app-docs.yml
 variables:
     EPUB_NAME: LabplotManual
+    DOC_ROOT: source/
     WEBSITE_LANGUAGES: ca cs de es fi fr it lt nl pt_PT sk uk_UA zh_CH
 
 run_tests:
