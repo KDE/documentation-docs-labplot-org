@@ -10,6 +10,11 @@ variables:
     DOC_ROOT: source/
     WEBSITE_LANGUAGES: ca cs de es fi fr it lt nl pt_PT sk uk_UA zh_CH
 
+# Execute the test first, because the build will automatically publish when successfully executed
+stages:
+  - test
+  - build
+
 # Replace build_sphinx_app_docs by the kde template once
 # https://github.com/sphinx-doc/sphinx/issues/13177 is fixed
 # Commit of MR https://invent.kde.org/documentation/docs-labplot-org/-/merge_requests/4 can be reverted
