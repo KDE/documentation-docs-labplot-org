@@ -18,5 +18,9 @@ run_tests:
   script:
     # Run unit-tests
     - make test
+    # ignore result of linkcheck because it raises an error but when fixing the error
+    # The resulting links in the final html do not work anymore
+    # Introduced with c0bb0f84cb8b5f73a9df90bf832572208572e4e8
+    # https://github.com/sphinx-doc/sphinx/issues/9383
     - make linkcheck || true
 
