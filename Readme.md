@@ -92,7 +92,7 @@ To publish your changes online, you have to create a merge request (to merge you
 In Gittyup just right click on the most recent commit in the commit history and select `New Branch`. Choose a name for this branch. Now you are ready to publish your changes to the world by pushing your changes upstream :)
 
 Now, the last step is required to get your changes into the common code:
-1) Go to the merge request site: https://invent.kde.org/marmsoler/labplotdocumentation/-/merge_requests.
+1) Go to the merge request site: `https://invent.kde.org/documentation/docs-labplot-org/-/merge_requests`.
 2) Create a new merge request with the corresponding button.
 3) Choose your pushed branch and continue.
 4) Add a description that explains what you want to achieve with your merge request and then finally create the merge request. Now you have to wait until the continuous integration (an automated test to check that everything is fine) finishes its job. If everything is OK, the corresponding pipeline circle becomes green. However, if it is red, just check what's the problem, fix it offline and push the changes again. When everything is as expected, a maintainer of the repository will merge the code and your changes will be applied to the online version of the documentation.
