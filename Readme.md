@@ -62,7 +62,7 @@ In order to contribute to the documentation, whether you are an active KDE membe
 Perform the steps below provided for a non-KDE member, except that you don't have to fork the repository.
 
 Also, use the following SSH link to clone the repository instead of the URL link provided below:
-`git@invent.kde.org:marmsoler/labplotdocumentation.git`.
+`git@invent.kde.org:documentation/docs-labplot-org.git`.
 
 #### Non-KDE member
 1) Register on https://invent.kde.org
@@ -71,7 +71,7 @@ Also, use the following SSH link to clone the repository instead of the URL link
 3) Use Gittyup to clone (create a local copy of the repository):
 - Open Gittyup.
 - `File -> Clone Repository`.
-- Enter the documentation URL: `https://invent.kde.org/marmsoler/labplotdocumentation.git`.
+- Enter the documentation URL: `https://invent.kde.org/documentation/docs-labplot-org.git`.
 - Follow the instructions indicated in the dialog.
 
 ## Building the documentation
