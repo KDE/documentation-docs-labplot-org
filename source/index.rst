@@ -389,6 +389,28 @@ This section describes how to use a set of specialized tools in LabPlot.
 
     tools
 
+########################
+SDK
+########################
+
+This section describes how to use the LabPlot SDK.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`sdk_cpp`
+
+    .. container:: tile no-descr
+
+        :ref:`sdk_examples`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   sdk
+
 ###################
 Credits and License
 ###################
