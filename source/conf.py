@@ -164,3 +164,11 @@ epub_exclude_files = ['search.html', '.htaccess', '404.xhtml', '404handler.php',
 
 epub_tocscope = 'includehidden'
 
+extensions = [ "breathe" ]
+
+breathe_projects = {
+    "LabPlot SDK" : "../xml"
+}
+
+# Breathe Configuration
+breathe_default_project = "LabPlot SDK"
