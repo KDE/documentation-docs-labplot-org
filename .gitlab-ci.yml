@@ -22,8 +22,6 @@ build_sphinx_app_docs:
   variables:
     GIT_DEPTH: "3"
   before_script:
-    - apt update
-    - apt install --yes --no-install-recommends doxygen python3-breathe # install doxygen and breathe
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git
     - git clone https://invent.kde.org/sysadmin/ci-notary-service.git
     - git clone --depth 1 https://invent.kde.org/education/labplot.git # clone labplot repo to extract sdk docs
