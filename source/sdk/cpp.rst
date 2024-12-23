@@ -3,13 +3,12 @@
 C++ SDK
 ===================
 
-   C++ SDK
+The C++ SDK allows LabPlot's various functionalities to be embedded in C++ applications.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
    :glob:
-
-   sdk_cpp/how_to_use
-   sdk_cpp/examples
-   sdk_cpp/api
+   
+   cpp/installation
+   cpp/api

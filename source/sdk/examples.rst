@@ -3,13 +3,11 @@
 SDK Examples
 ===================
 
-   SDK Examples
+The following examples show various uses of the LabPlot SDK for inspiration.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
    :glob:
-
-   sdk_examples/how_to_use
-   sdk_examples/examples
-   sdk_examples/api
+   
+   examples/**/*
