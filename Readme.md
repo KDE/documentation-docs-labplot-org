@@ -40,11 +40,11 @@ Follow these steps to install the required Python libraries globally on your sys
 - On Ubuntu:
     - `sudo apt install python3-sphinx python3-sphinx-rtd-theme`
     - `sudo apt install python3-pip`
-    - `pip install sphinxcontrib-youtube`
+    - `pip install sphinxcontrib-youtube breathe`
 - On Fedora / RHEL: 
     - `sudo dnf install python3-sphinx python3-sphinx_rtd_theme`
     - `sudo dnf install python3-pip`
-    - `pip install sphinxcontrib-youtube`
+    - `pip install sphinxcontrib-youtube breathe`
 
 If you don't want to install these libraries globally on your system, you can also install them locally in VSCodium using a `virtual environment`.
 
@@ -52,7 +52,16 @@ To do it, open the `Command Palette` (Ctrl+Shift+P), search for the `Python: Cre
 
 Then install the necessary Python packages by writing the following command in the VScode's terminal:
 
-`pip install sphinx sphinx-rtd-theme sphinxcontrib-youtube`
+`pip install sphinx sphinx-rtd-theme sphinxcontrib-youtube breathe`
+
+### Doxygen and Git
+
+We extract our C++ SDK documentation from the LabPlot sources with doxygen. Follow these steps to install doxygen and git on your system.
+
+- On Ubuntu:
+    - `sudo apt install doxygen git`
+- On Fedora / RHEL: 
+    - `sudo dnf install doxygen git`
 
 ### Clone (Download) the Documentation
 
