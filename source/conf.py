@@ -49,7 +49,8 @@ except subprocess.CalledProcessError as exc:
 extensions = [
     'sphinx_rtd_theme',
     'sphinxcontrib.youtube',
-    'sphinx.ext.todo'
+    'sphinx.ext.todo',
+    'breathe'
 ]
 
 # Display todos by setting to True
@@ -163,8 +164,6 @@ epub_scheme = 'URL'
 epub_exclude_files = ['search.html', '.htaccess', '404.xhtml', '404handler.php', '_static/favicon.ico', '_static/images/favicon.ico']
 
 epub_tocscope = 'includehidden'
-
-extensions = [ "breathe" ]
 
 breathe_projects = {
     "LabPlot SDK" : "../xml"
