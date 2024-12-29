@@ -89,8 +89,15 @@ As mentioned before, editing of the documentation can be done in VSCodium. There
 
 To update the HTML version of the documentation execute the following command:
 
-- On Windows: `make.bat`.
+- On Windows: `make.bat html`.
 - On Linux / MacOs: `make html`.
+
+To update the HTML version of the documentation with SDK documentation execute the following command:
+
+- On Windows: `make.bat html-sdk; make.bat html`.
+- On Linux / MacOs: `make html-sdk; make html`.
+
+The `html-sdk` rule clones the LabPlot sources into a `labplot` folder. This step is skipped if a directory or symlink named `labplot` is existing.
 
 The generated HTML file is located in: `build/html/index.html`. Open it in your browser to see the compiled documentation.
 

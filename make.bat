@@ -24,9 +24,18 @@ if errorlevel 9009 (
 )
 
 if "%1" == "" goto help
-git clone --depth 1 https://invent.kde.org/education/labplot.git
-doxygen
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+goto end
+
+:html-sdk
+if not exist "labplot\" (
+    git clone --depth 1 https://invent.kde.org/education/labplot.git
+    doxygen
+)
+if not exist "xml\" (
+    doxygen
+)
 goto end
 
 :help
