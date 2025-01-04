@@ -24,7 +24,7 @@ build_sphinx_app_docs:
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git
     - git clone https://invent.kde.org/sysadmin/ci-notary-service.git
-    - git clone --depth 1 https://invent.kde.org/education/labplot.git # clone labplot repo to extract sdk docs
+    - git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git # clone labplot repo to extract sdk docs
   script:
     - git config --global --add safe.directory $CI_PROJECT_DIR
     - doxygen # generate doxygen xml docs for breathe to consume

@@ -30,7 +30,7 @@ goto end
 
 :html-sdk
 if not exist "labplot\" (
-    git clone --depth 1 https://invent.kde.org/education/labplot.git
+    git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git
     doxygen
 )
 if not exist "xml\" (

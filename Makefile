@@ -19,7 +19,7 @@ test:
 
 html-sdk:
 	@if [ ! -d "labplot" ]; then \
-		git clone --depth 1 https://invent.kde.org/education/labplot.git; \
+		git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git; \
 		doxygen; \
 	fi
 	@if [ ! -d "xml" ]; then \
