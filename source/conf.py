@@ -50,7 +50,8 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinxcontrib.youtube',
     'sphinx.ext.todo',
-    'breathe'
+    'breathe',
+    'sphinx_tabs.tabs' 
 ]
 
 # Display todos by setting to True
