@@ -9,6 +9,9 @@ C++ SDK API Documentation - Filters
 .. doxygenclass:: BinaryFilter
    :members:
 
+.. doxygenclass:: CANFilter
+   :members:
+
 .. doxygenclass:: FITSFilter
    :members:
 

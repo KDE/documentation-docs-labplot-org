@@ -18,11 +18,10 @@ test:
 	@python3 tests/check_filenames.py
 
 html-sdk:
-	@if [ ! -d "labplot" ]; then \
-		git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git; \
-		doxygen; \
-	fi
 	@if [ ! -d "xml" ]; then \
+		if [ ! -d "labplot" ]; then \
+			git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git; \
+		fi; \
 		doxygen; \
 	fi
 

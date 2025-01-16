@@ -29,11 +29,10 @@ if "%1" == "" goto help
 goto end
 
 :html-sdk
-if not exist "labplot\" (
-    git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git
-    doxygen
-)
 if not exist "xml\" (
+	if not exist "labplot\" (
+		git clone --branch master --single-branch --depth 1 https://invent.kde.org/education/labplot.git
+	)
     doxygen
 )
 goto end
