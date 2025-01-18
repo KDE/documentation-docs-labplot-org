@@ -1,22 +1,19 @@
 Getting Started
 ===================
 
-C++ SDK Getting Started
+############
+Installation
+############
 
-#########
-Linux
-#########
+The LabPlot C++ SDK is included with a LabPlot installation. Please refer to the official LabPlot `website <https://labplot.org/download/>`_ for how to get a LabPlot installation for your respective system.
 
-C++ SDK Getting Started Linux
+#####
+CMake
+#####
 
-#########
-MacOS
-#########
+The LabPlot C++ SDK provides a shared library CMake target. After installation, the CMake target can be accessed from your CMakeLists.txt file as shown below:
 
-C++ SDK Getting Started MacOS
+.. code-block:: cmake
 
-#########
-Windows
-#########
-
-C++ SDK Getting Started Windows
+    find_package(LabPlot REQUIRED COMPONENTS SDK)
+    target_link_libraries(<your-target> LabPlot::SDK)

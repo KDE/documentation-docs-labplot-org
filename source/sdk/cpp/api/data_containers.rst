@@ -1,10 +1,15 @@
 Data Containers
 ===================
 
-C++ SDK API Documentation - Data Containers
+Data Containers are groups of columns with sugar around.
 
-.. doxygenclass:: Spreadsheet
-   :members:
+
 
 .. doxygenclass:: Matrix
+   :members:
+
+
+
+
+.. doxygenclass:: Spreadsheet
    :members:
