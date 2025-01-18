@@ -8,7 +8,8 @@ include:
 variables:
     EPUB_NAME: LabplotManual
     DOC_ROOT: source/
-    WEBSITE_LANGUAGES: en ca cs de es fi fr it lt nl pt_PT sk uk_UA zh_CH
+    # WEBSITE_LANGUAGES: en ca cs de es fi fr it lt nl pt_PT sk uk_UA zh_CH
+    WEBSITE_LANGUAGES: en
 
 # Replace build_sphinx_app_docs by the kde template once
 # https://github.com/sphinx-doc/sphinx/issues/13177 is fixed
