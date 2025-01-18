@@ -51,7 +51,7 @@ extensions = [
     'sphinxcontrib.youtube',
     'sphinx.ext.todo',
     'breathe',
-    'sphinx_tabs.tabs' 
+    # 'sphinx_tabs.tabs' 
 ]
 
 # Display todos by setting to True
