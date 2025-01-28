@@ -3,5 +3,9 @@ Column
 
 Column is the fundamental data source in LabPlot.
 
-.. doxygenclass:: Column
-   :members:
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+   :glob:
+   
+   column/*

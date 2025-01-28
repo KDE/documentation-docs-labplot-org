@@ -3,8 +3,9 @@ Aspect Containers
 
 Aspect Containers are use to organize aspects.
 
-.. doxygenclass:: Folder
-   :members:
-
-.. doxygenclass:: Project
-   :members:
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+   :glob:
+   
+   aspect_containers/*
