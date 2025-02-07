@@ -18,34 +18,38 @@ Below is a small demo to get an impression about what is possible showing how to
 
 ..    .. code-tab:: c++
 
-..       #include <labplot/labplot.h>
+..       #include <QApplication>
 
-..       int main(int argc, char **argv) {
+..       #include <labplot.h>
+
+..       int main(int argc, char** argv) {
+..          QApplication app(argc, argv);
+
 ..          // create a spreadsheet and import the data into it
-..          auto* spreadsheet = new Spreadsheet("data");
+..          auto* spreadsheet = new Spreadsheet(QStringLiteral("data"));
 ..          AsciiFilter filter;
-..          filter.readDataFromFile("data.txt", spreadsheet);
+..          filter.readDataFromFile(QStringLiteral("data.txt"), spreadsheet);
 
 ..          // create a worksheet
-..          auto* worksheet = new Worksheet("worksheet");
+..          auto* worksheet = new Worksheet(QStringLiteral("worksheet"));
 
-..          //create a plot area and add it to the worksheet
-..          auto* plotArea = new CartesianPlot("plot area");
+..          // create a plot area and add it to the worksheet
+..          auto* plotArea = new CartesianPlot(QStringLiteral("plot area"));
 ..          plotArea->setType(CartesianPlot::Type::FourAxes);
 ..          plotArea->addLegend();
 ..          worksheet->addChild(plotArea);
 
 ..          // create a histogram for the imported data and add it to the plot area
-..          auto* histogram = new Histogram("histogram");
+..          auto* histogram = new Histogram(QStringLiteral("histogram"));
 ..          histogram->setNormalization(Histogram::Normalization::ProbabilityDensity);
 ..          histogram->setDataColumn(spreadsheet->column(0));
 ..          plotArea->addChild(histogram);
 
-..          //perform a fit to the raw data and show it
-..          auto* fitCurve = new XYFitCurve("fit");
+..          // perform a fit to the raw data and show it
+..          auto* fitCurve = new XYFitCurve(QStringLiteral("fit"));
 ..          fitCurve->setDataSourceType(XYAnalysisCurve::DataSourceType::Histogram);
 ..          fitCurve->setDataSourceHistogram(histogram);
-..          plotArea->addChild(histogram);
+..          plotArea->addChild(fitCurve);
 
 ..          // initialize the fit
 ..          auto fitData = fitCurve->fitData();
@@ -59,10 +63,10 @@ Below is a small demo to get an impression about what is possible showing how to
 ..          fitCurve->recalculate();
 
 ..          // apply the theme "Dracula"
-..          worksheet->loadTheme("Dracula");
+..          worksheet->setTheme(QStringLiteral("Dracula"));
 
 ..          // export the worksheet to PDF
-..          worksheet->exportToFile("result.pdf", Worksheet::ExportFormat::PDF);
+..          worksheet->exportToFile(QStringLiteral("result.pdf"), Worksheet::ExportFormat::PDF);
 ..       }
 
 ..    .. code-tab:: py
@@ -71,34 +75,38 @@ Below is a small demo to get an impression about what is possible showing how to
 
 .. code-block:: cpp
 
-      #include <labplot/labplot.h>
+      #include <QApplication>
 
-      int main(int argc, char **argv) {
+      #include <labplot.h>
+
+      int main(int argc, char** argv) {
+         QApplication app(argc, argv);
+
          // create a spreadsheet and import the data into it
-         auto* spreadsheet = new Spreadsheet("data");
+         auto* spreadsheet = new Spreadsheet(QStringLiteral("data"));
          AsciiFilter filter;
-         filter.readDataFromFile("data.txt", spreadsheet);
+         filter.readDataFromFile(QStringLiteral("data.txt"), spreadsheet);
 
          // create a worksheet
-         auto* worksheet = new Worksheet("worksheet");
+         auto* worksheet = new Worksheet(QStringLiteral("worksheet"));
 
-         //create a plot area and add it to the worksheet
-         auto* plotArea = new CartesianPlot("plot area");
+         // create a plot area and add it to the worksheet
+         auto* plotArea = new CartesianPlot(QStringLiteral("plot area"));
          plotArea->setType(CartesianPlot::Type::FourAxes);
          plotArea->addLegend();
          worksheet->addChild(plotArea);
 
          // create a histogram for the imported data and add it to the plot area
-         auto* histogram = new Histogram("histogram");
+         auto* histogram = new Histogram(QStringLiteral("histogram"));
          histogram->setNormalization(Histogram::Normalization::ProbabilityDensity);
          histogram->setDataColumn(spreadsheet->column(0));
          plotArea->addChild(histogram);
 
-         //perform a fit to the raw data and show it
-         auto* fitCurve = new XYFitCurve("fit");
+         // perform a fit to the raw data and show it
+         auto* fitCurve = new XYFitCurve(QStringLiteral("fit"));
          fitCurve->setDataSourceType(XYAnalysisCurve::DataSourceType::Histogram);
          fitCurve->setDataSourceHistogram(histogram);
-         plotArea->addChild(histogram);
+         plotArea->addChild(fitCurve);
 
          // initialize the fit
          auto fitData = fitCurve->fitData();
@@ -112,10 +120,10 @@ Below is a small demo to get an impression about what is possible showing how to
          fitCurve->recalculate();
 
          // apply the theme "Dracula"
-         worksheet->loadTheme("Dracula");
+         worksheet->setTheme(QStringLiteral("Dracula"));
 
          // export the worksheet to PDF
-         worksheet->exportToFile("result.pdf", Worksheet::ExportFormat::PDF);
+         worksheet->exportToFile(QStringLiteral("result.pdf"), Worksheet::ExportFormat::PDF);
       }
 
 .. figure:: sdk/images/SDKSamplePlot.png
