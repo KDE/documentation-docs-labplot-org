@@ -1,7 +1,7 @@
-API
+API Reference
 ===================
 
-C++ SDK API Documentation
+C++ SDK API Reference
 
 .. toctree::
    :maxdepth: 2

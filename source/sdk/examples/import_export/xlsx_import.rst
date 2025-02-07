@@ -25,7 +25,7 @@ An example showing how to import data from an XLSX `file <https://invent.kde.org
 
 ..             Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-..             filter.readDataFromFile(QStringLiteral("/home/israel/Downloads/XLSX Sample.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+..             filter.readDataFromFile(QStringLiteral("data.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
 ..             if (!filter.lastError().isEmpty()) {
 ..                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
@@ -70,7 +70,7 @@ An example showing how to import data from an XLSX `file <https://invent.kde.org
 
             Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-            filter.readDataFromFile(QStringLiteral("/home/israel/Downloads/XLSX Sample.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+            filter.readDataFromFile(QStringLiteral("data.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
             if (!filter.lastError().isEmpty()) {
                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;

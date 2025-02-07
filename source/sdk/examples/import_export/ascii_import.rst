@@ -33,7 +33,7 @@ An example showing how to import data from an ASCII `file <https://invent.kde.or
 
 ..             Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-..             filter.readDataFromFile(QStringLiteral("/home/israel/Downloads/ASCII Sample"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+..             filter.readDataFromFile(QStringLiteral("data.txt"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
 ..             if (!filter.lastError().isEmpty()) {
 ..                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
@@ -86,7 +86,7 @@ An example showing how to import data from an ASCII `file <https://invent.kde.or
 
         Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-        filter.readDataFromFile(QStringLiteral("/home/israel/Downloads/ASCII Sample"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+        filter.readDataFromFile(QStringLiteral("data.txt"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
         if (!filter.lastError().isEmpty()) {
             std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
