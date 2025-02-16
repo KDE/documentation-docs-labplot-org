@@ -411,6 +411,23 @@ This section describes how to use the LabPlot SDK.
 
    sdk
 
+########################
+Tutorials
+########################
+Tutorials and HOWTOs
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`tutorials_live_data`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   tutorials
+
 ###################
 Credits and License
 ###################
