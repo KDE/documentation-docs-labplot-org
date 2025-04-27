@@ -18,9 +18,8 @@ Data Analysis
    :caption: Contents:
    :glob:
 
-   data_analysis/data_analysis_fitting
+   data_analysis/fitting/overview
    data_analysis/data_analysis_smoothing
-   data_analysis/data_analysis_curve_fitting
    data_analysis/data_analysis_interpolation
    data_analysis/data_analysis_integration
    data_analysis/data_analysis_differentiation
