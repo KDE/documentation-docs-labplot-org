@@ -212,15 +212,11 @@ This section describes LabPlot's data analysis tools.
 
     .. container:: tile no-descr
 
-        :ref:`data_analysis_fitting`
+        :ref:`fitting/overview`
 
     .. container:: tile no-descr
 
         :ref:`data_analysis_smoothing`
-
-    .. container:: tile no-descr
-
-        :ref:`data_analysis_curve_fitting`
 
     .. container:: tile no-descr
 
