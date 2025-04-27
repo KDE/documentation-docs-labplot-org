@@ -1,7 +1,7 @@
-.. _data_analysis_curve_fitting:
+.. _mathematical_background:
 
-Curve Fitting
-===================
+Mathematical Background
+=======================
 
 LabPlot calculates several statistical measures that help to estimate the ``goodness of the fit``.
 
