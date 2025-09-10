@@ -13,7 +13,7 @@
 //       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
 //       All changes from this list must be also applied to the docs-labplot-org section from the JSON config file in binary-factory-tooling repository
 //       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
-//       all_langs list in ressources/static/js/version_switch.js file from this repository needs to be also updated.
+//       all_langs list in resources/static/js/version_switch.js file from this repository needs to be also updated.
 
 $supported_languages = array(
     "ca",
@@ -94,7 +94,7 @@ function determine_appropriate_language( $request, $browser_languages, $supporte
                 $language = "zh_CN";
             }
         } else {
-            // Browsers use dashes to seperate language variants
+            // Browsers use dashes to separate language variants
             // But KDE translation systems use underscores for this so ensure we are consistent here
             $language = str_replace("-", "_", $language);
         }

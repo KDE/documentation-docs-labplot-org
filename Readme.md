@@ -115,7 +115,7 @@ Now, the last step is required to get your changes into the common code:
 
 ### Additional note
 
-To check if there are any issues with your local version of the documentation that need to be dealt with, you can execute the followings tests on your computer.
+To check if there are any issues with your local version of the documentation that need to be dealt with, you can execute the following tests on your computer.
 
 Tests:
 

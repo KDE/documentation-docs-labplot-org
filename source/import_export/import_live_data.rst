@@ -43,7 +43,7 @@ You can also select the type of data. The following data types are currently sup
 
 Then go to the :menuselection:`Update Options` in the dialog and choose how to read the data:
 
-- ``Continously Fixed`` - fixed amount of samples if processed from the beginning of the newly received data.
+- ``Continuously Fixed`` - fixed amount of samples if processed from the beginning of the newly received data.
 - ``From End`` - fixed amount of samples is processed starting from the end of the newly received data.
 - ``Till End`` - all newly received data is processed.
 - ``Whole File`` - on every read the whole file is re-read completely and processed. Only available for ``File or Named Pipe`` data sources.

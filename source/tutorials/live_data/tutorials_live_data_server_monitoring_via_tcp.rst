@@ -21,7 +21,7 @@ To collect the relevant metrics and to send them via TCP, we utilize a Python sc
     # bind host and port together
     serv.bind((HOST,PORT))
 
-    # configure how many clients the server can listen simultaneosly
+    # configure how many clients the server can listen simultaneously
     serv.listen(1)
     print ('listening ...')
 
