@@ -18,4 +18,5 @@ This section contains tutorials and HOWTOs contributed by the developers and use
    :caption: Contents:
    :glob:
 
+   tutorials/tutorials_visualization
    tutorials/tutorials_live_data
