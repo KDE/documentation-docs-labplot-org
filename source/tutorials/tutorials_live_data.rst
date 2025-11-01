@@ -12,3 +12,4 @@ Tutorials and HOWTOs for reading and visualizing live-data.
    :glob:
 
    live_data/tutorials_live_data_server_monitoring_via_tcp
+   live_data/tutorials_live_data_serial_examples
