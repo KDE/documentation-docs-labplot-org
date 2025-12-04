@@ -12,3 +12,4 @@ Tutorials and HOWTOs for various techniques to visualize the data.
    :glob:
 
    visualization/tutorials_visualization_plot_text_data
+   visualization/log_scale_bar_plots
