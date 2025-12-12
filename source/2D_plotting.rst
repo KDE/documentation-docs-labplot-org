@@ -22,3 +22,4 @@
    2D_plotting/2D_plotting_histogram
    2D_plotting/2D_plotting_boxplot
    2D_plotting/2D_plotting_xycurve_formula
+   2D_plotting/continual_improvement_plots
