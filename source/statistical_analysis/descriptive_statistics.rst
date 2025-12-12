@@ -6,13 +6,13 @@
 
    :authors: - LabPlot Team
 
-.. _statistics:
+.. _descriptive_statistics:
 
-Statistics
-===================
+Descriptive Statistics
+======================
 
-How to do basic statistics in LabPlot
-----------------------------------------
+How to do basic descriptive statistics in LabPlot
+-------------------------------------------------
 
 See the video on how to quickly get ``descriptive statistics`` and ``visual overview`` of your data.
 

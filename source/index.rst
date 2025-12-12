@@ -183,24 +183,24 @@ This section describes 2D plots available in LabPlot.
 
     2D_plotting
 
-###################
-Statistics
-###################
+####################
+Statistical Analysis
+####################
 
 
-This section describes how to do basic statistics in LabPlot.
+This section describes how to perform statistical analysis in LabPlot.
 
 .. container:: toctile
 
     .. container:: tile no-descr
 
-        :ref:`statistics`
+        :ref:`descriptive_statistics`
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   statistics
+   statistical_analysis
 
 ##############
 Data Analysis

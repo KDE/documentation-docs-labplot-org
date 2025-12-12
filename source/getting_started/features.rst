@@ -1,7 +1,7 @@
 .. _application_features:
 
-LabPlot Features
-=================
+Features
+========
 
 .. contents::
 
