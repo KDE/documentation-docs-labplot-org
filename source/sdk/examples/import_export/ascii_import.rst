@@ -4,105 +4,90 @@ ASCII File Import
 An example showing how to import data from an ASCII `file <https://invent.kde.org/education/labplot/-/blob/master/lib/examples/ascii_import_ex/data.txt>`_ into a Spreadsheet.
 
 
-.. .. tabs::
+.. tabs::
 
-..    .. code-tab:: c++
+   .. tab:: C++
 
-..         #include <iostream>
+      .. code-block:: cpp
 
-..         #include <QApplication>
+         #include <iostream>
+         #include <QApplication>
+         #include "labplot.h"
 
-..         #include "labplot.h"
+         int main(int argc, char* argv[]) {
+             QApplication app(argc, argv);
 
-..         int main(int argc, char* argv[]) {
-..             QApplication app(argc, argv);
+             AsciiFilter filter;
+             auto p = filter.properties();
 
-..             AsciiFilter filter;
-..             auto p = filter.properties();
+             p.automaticSeparatorDetection = true;
+             p.separator = QStringLiteral(";");
+             p.headerEnabled = true;
+             p.headerLine = 1;
+             p.commentCharacter = QStringLiteral("#");
+             p.intAsDouble = false;
+             p.removeQuotes = true;
+             p.dateTimeFormat = QStringLiteral("MM/dd/yyyy");
 
-..             p.automaticSeparatorDetection = true;
-..             p.separator = QStringLiteral(";");
-..             p.headerEnabled = true;
-..             p.headerLine = 1;
-..             p.commentCharacter = QStringLiteral("#");
-..             p.intAsDouble = false;
-..             p.removeQuotes = true;
-..             p.dateTimeFormat = QStringLiteral("MM/dd/yyyy");
+             filter.setProperties(p);
 
-..             filter.setProperties(p);
+             Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-..             Spreadsheet spreadsheet(QStringLiteral("test"), false);
+             filter.readDataFromFile(QStringLiteral("data.txt"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
-..             filter.readDataFromFile(QStringLiteral("data.txt"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+             if (!filter.lastError().isEmpty()) {
+                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
+                 return -1;
+             }
 
-..             if (!filter.lastError().isEmpty()) {
-..                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
-..                 return -1;
-..             }
+             std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
+             std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
 
-..             std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
-..             std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
+             spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
+             spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
+             spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
+             spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
 
-..             spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
-..             spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
-..             spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
-..             spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
+             std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
+             std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
+             std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
+             std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
+         }
 
-..             std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
-..             std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
-..             std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
-..             std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
-..         }
+   .. tab:: Python
 
+      .. code-block:: python
 
-..    .. code-tab:: py
+         from labplot import *
 
-..         # TO-DO: coming soon
+         filter = AsciiFilter()
+         p = filter.properties()
+         p.automaticSeparatorDetection = True
+         p.separator = ";"
+         p.headerEnabled = True
+         p.headerLine = 1
+         p.commentCharacter = "#"
+         p.intAsDouble = False
+         p.removeQuotes = True
+         p.dateTimeFormat = "MM/dd/yyyy"
+         filter.setProperties(p)
 
-.. code-block:: cpp
+         spreadsheet = Spreadsheet("test", False)
+         filter.readDataFromFile("data.txt", spreadsheet, AbstractFileFilter.ImportMode.Replace)
 
-    #include <iostream>
+         if filter.lastError():
+             print(f"Import error: {filter.lastError()}")
+             exit(1)
 
-    #include <QApplication>
+         print(f"Number of columns: {spreadsheet.columnCount()}")
+         print(f"Number of rows: {spreadsheet.rowCount()}")
 
-    #include "labplot.h"
+         spreadsheet.column(0).setColumnMode(AbstractColumn.ColumnMode.Text)
+         spreadsheet.column(1).setColumnMode(AbstractColumn.ColumnMode.Integer)
+         spreadsheet.column(2).setColumnMode(AbstractColumn.ColumnMode.Double)
+         spreadsheet.column(3).setColumnMode(AbstractColumn.ColumnMode.Day)
 
-    int main(int argc, char* argv[]) {
-        QApplication app(argc, argv);
-
-        AsciiFilter filter;
-        auto p = filter.properties();
-
-        p.automaticSeparatorDetection = true;
-        p.separator = QStringLiteral(";");
-        p.headerEnabled = true;
-        p.headerLine = 1;
-        p.commentCharacter = QStringLiteral("#");
-        p.intAsDouble = false;
-        p.removeQuotes = true;
-        p.dateTimeFormat = QStringLiteral("MM/dd/yyyy");
-
-        filter.setProperties(p);
-
-        Spreadsheet spreadsheet(QStringLiteral("test"), false);
-
-        filter.readDataFromFile(QStringLiteral("data.txt"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
-
-        if (!filter.lastError().isEmpty()) {
-            std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
-            return -1;
-        }
-
-        std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
-        std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
-
-        spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
-        spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
-        spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
-        spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
-
-        std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
-        std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
-        std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
-        std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
-    }
+         print(f"First Name: {spreadsheet.column(0).textAt(1)}")
+         print(f"Age: {spreadsheet.column(1).integerAt(1)}")
+         print(f"Height: {spreadsheet.column(2).doubleAt(1)}")
+         print(f"Date of Birth: {spreadsheet.column(3).dateAt(1)}")

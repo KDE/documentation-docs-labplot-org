@@ -390,6 +390,28 @@ This section describes how to use a set of specialized tools in LabPlot.
     tools
 
 ########################
+Scripting
+########################
+
+This section describes how to use the scripting capabilities to automate tasks.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`sdk_cpp`
+
+    .. container:: tile no-descr
+
+        :ref:`sdk_examples`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   scripting
+
+########################
 SDK
 ########################
 
@@ -399,7 +421,15 @@ This section describes how to use the LabPlot SDK.
 
     .. container:: tile no-descr
 
+        :ref:`sdk_concepts`
+
+    .. container:: tile no-descr
+
         :ref:`sdk_cpp`
+
+    .. container:: tile no-descr
+
+        :ref:`sdk_python`
 
     .. container:: tile no-descr
 

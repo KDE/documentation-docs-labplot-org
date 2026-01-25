@@ -13,5 +13,4 @@ For instructions on how to set up the necessary components and utilize the libra
    :glob:
    
    cpp/getting_started
-   cpp/usage
    cpp/api

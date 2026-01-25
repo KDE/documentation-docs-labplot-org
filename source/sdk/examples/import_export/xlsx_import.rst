@@ -3,90 +3,74 @@ XLSX File Import
 
 An example showing how to import data from an XLSX `file <https://invent.kde.org/education/labplot/-/blob/master/lib/examples/xlsx_import_ex/data.xlsx>`_ into a Spreadsheet.
 
+.. tabs::
 
-.. .. tabs::
+   .. tab:: C++
 
-..    .. code-tab:: c++
+      .. code-block:: cpp
 
-..         #include <iostream>
+         #include <iostream>
+         #include <QApplication>
+         #include "labplot.h"
 
-..         #include <QApplication>
+         int main(int argc, char* argv[]) {
+             QApplication app(argc, argv);
 
-..         #include "labplot.h"
+             XLSXFilter filter;
+             filter.setCurrentSheet(QStringLiteral("Sheet1"));
+             filter.setCurrentRange(QStringLiteral("A1:D7"));
+             filter.setFirstRowAsColumnNames(true);
 
-..         int main(int argc, char* argv[]) {
-..             QApplication app(argc, argv);
+             Spreadsheet spreadsheet(QStringLiteral("test"), false);
 
-..             XLSXFilter filter;
-            
-..             filter.setCurrentSheet(QStringLiteral("Sheet1"));
-..             filter.setCurrentRange(QStringLiteral("A1:D7"));
-..             filter.setFirstRowAsColumnNames(true);
+             filter.readDataFromFile(QStringLiteral("data.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
 
-..             Spreadsheet spreadsheet(QStringLiteral("test"), false);
+             if (!filter.lastError().isEmpty()) {
+                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
+                 return -1;
+             }
 
-..             filter.readDataFromFile(QStringLiteral("data.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
+             std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
+             std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
 
-..             if (!filter.lastError().isEmpty()) {
-..                 std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
-..                 return -1;
-..             }
+             spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
+             spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
+             spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
+             spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
 
-..             std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
-..             std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
+             std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
+             std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
+             std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
+             std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
+         }
 
-..             spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
-..             spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
-..             spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
-..             spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
+   .. tab:: Python
 
-..             std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
-..             std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
-..             std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
-..             std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
-..         }
+      .. code-block:: python
 
+         from labplot import *
 
-..    .. code-tab:: py
+         filter = XLSXFilter()
+         filter.setCurrentSheet("Sheet1")
+         filter.setCurrentRange("A1:D7")
+         filter.setFirstRowAsColumnNames(True)
 
-..         # TO-DO: coming soon
+         spreadsheet = Spreadsheet("test", False)
+         filter.readDataFromFile("data.xlsx", spreadsheet, AbstractFileFilter.ImportMode.Replace)
 
-.. code-block:: cpp
+         if filter.lastError():
+             print(f"Import error: {filter.lastError()}")
+             exit(1)
 
-        #include <iostream>
+         print(f"Number of columns: {spreadsheet.columnCount()}")
+         print(f"Number of rows: {spreadsheet.rowCount()}")
 
-        #include <QApplication>
+         spreadsheet.column(0).setColumnMode(AbstractColumn.ColumnMode.Text)
+         spreadsheet.column(1).setColumnMode(AbstractColumn.ColumnMode.Integer)
+         spreadsheet.column(2).setColumnMode(AbstractColumn.ColumnMode.Double)
+         spreadsheet.column(3).setColumnMode(AbstractColumn.ColumnMode.Day)
 
-        #include "labplot.h"
-
-        int main(int argc, char* argv[]) {
-            QApplication app(argc, argv);
-
-            XLSXFilter filter;
-            
-            filter.setCurrentSheet(QStringLiteral("Sheet1"));
-            filter.setCurrentRange(QStringLiteral("A1:D7"));
-            filter.setFirstRowAsColumnNames(true);
-
-            Spreadsheet spreadsheet(QStringLiteral("test"), false);
-
-            filter.readDataFromFile(QStringLiteral("data.xlsx"), &spreadsheet, AbstractFileFilter::ImportMode::Replace);
-
-            if (!filter.lastError().isEmpty()) {
-                std::cout << "Import error: " << filter.lastError().toStdString() << std::endl;
-                return -1;
-            }
-
-            std::cout << "Number of columns: " << spreadsheet.columnCount() << std::endl;
-            std::cout << "Number of rows: " << spreadsheet.rowCount() << std::endl;
-
-            spreadsheet.column(0)->setColumnMode(AbstractColumn::ColumnMode::Text);
-            spreadsheet.column(1)->setColumnMode(AbstractColumn::ColumnMode::Integer);
-            spreadsheet.column(2)->setColumnMode(AbstractColumn::ColumnMode::Double);
-            spreadsheet.column(3)->setColumnMode(AbstractColumn::ColumnMode::Day);
-
-            std::cout << "First Name: " << spreadsheet.column(0)->textAt(1).toStdString() << std::endl;
-            std::cout << "Age: " << spreadsheet.column(1)->integerAt(1) << std::endl;
-            std::cout << "Height: " << spreadsheet.column(2)->doubleAt(1) << std::endl;
-            std::cout << "Date of Birth: " << spreadsheet.column(3)->dateAt(1).toString().toStdString() << std::endl;
-        }
+         print(f"First Name: {spreadsheet.column(0).textAt(1)}")
+         print(f"Age: {spreadsheet.column(1).integerAt(1)}")
+         print(f"Height: {spreadsheet.column(2).doubleAt(1)}")
+         print(f"Date of Birth: {spreadsheet.column(3).dateAt(1)}")

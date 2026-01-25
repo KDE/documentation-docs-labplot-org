@@ -1,6 +1,6 @@
 .. _sdk_examples:
 
-SDK Examples
+Examples
 ===================
 
 The following examples show various uses of the LabPlot SDK for inspiration.
