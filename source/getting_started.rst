@@ -24,4 +24,5 @@ This section provides an overview to quickly get you started using LabPlot.
    getting_started/introduction
    getting_started/features
    getting_started/quick_start
+   getting_started/example_projects
    

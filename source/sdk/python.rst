@@ -1,9 +1,9 @@
-.. _sdk_cpp:
+.. _sdk_python:
 
-C++ SDK
+Python SDK
 ===================
 
-The C++ SDK enables the various functionalities of LabPlot to be embedded in C++ applications.
+The Python SDK enables the various functionalities of LabPlot to be embedded in Python applications.
 
 For instructions on how to set up the necessary components and utilize the library, please refer to the "Getting Started" section. The API documentation is located in the "API" section.
 
@@ -11,6 +11,6 @@ For instructions on how to set up the necessary components and utilize the libra
    :maxdepth: 1
    :caption: Contents:
    :glob:
-   
-   cpp/getting_started
-   cpp/api
+
+   python/getting_started
+   python/api

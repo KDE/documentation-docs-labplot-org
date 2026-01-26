@@ -19,7 +19,8 @@ It provides access to the application's functionalities and to the current appli
 This is particularly useful for batch processing of data sets and for automating complex or repetitive workflows. Currently, the only supported scripting language in LabPlot is Python.
 
 .. note::
-    Although there are similarities and overlaps in the functionality provided by the :ref:`computational_notebooks` and the :ref:`sdk_python`, where Python can be used to combine LabPlot's functionality with the power of Python and other external modules, they are distinct and serve different purposes. Computation notebooks are primarily designed for interactive data analysis and visualisation within a REPL interface (read-evaluate-print loop), while the Python SDK enables LabPlot's functionality to be used in external Python applications. In contrast, Python scripting within the application focuses on automating tasks and workflows within the running LabPlot application itself.
+    Although there are similarities and overlaps in the functionality provided by the :ref:`computational_notebooks` and the :ref:`sdk_python`, where Python can be used to combine LabPlot's functionality with the power of Python and other external modules, they are distinct and serve different purposes. **Computation Notebooks** are primarily designed for interactive data analysis and visualisation within a REPL interface (read-evaluate-print loop), while the **Python SDK** enables LabPlot's functionality to be used in external Python applications. In contrast, **Python Scripting** within the application focuses on automating tasks and workflows within the running LabPlot application itself.
+
 
 Getting Started
 ----------------------------------------
