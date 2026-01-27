@@ -31,7 +31,7 @@ The bindings are imported into the current script runtime via
 
 .. code-block:: python
 
-   import pylabplot *
+   from pylabplot import *
 
 The next step in such a script depends on obtaining a reference to the current project, which is done via the call.
 
@@ -44,7 +44,7 @@ A simple working example that creates a new worksheet in the current project is 
 
 .. code-block:: python
 
-   import pylabplot *
+   from pylabplot import *
 
    # Get the current project
    project = project()
