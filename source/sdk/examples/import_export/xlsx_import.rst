@@ -48,7 +48,7 @@ An example showing how to import data from an XLSX `file <https://invent.kde.org
 
       .. code-block:: python
 
-         from labplot import *
+         from pylabplot import *
 
          filter = XLSXFilter()
          filter.setCurrentSheet("Sheet1")
