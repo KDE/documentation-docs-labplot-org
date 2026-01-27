@@ -58,7 +58,7 @@ An example showing how to import data from an ASCII `file <https://invent.kde.or
 
       .. code-block:: python
 
-         from labplot import *
+         from pylabplot import *
 
          filter = AsciiFilter()
          p = filter.properties()
