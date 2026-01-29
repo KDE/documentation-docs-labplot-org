@@ -55,6 +55,7 @@ Non-parametric tests do not assume a normal distribution and are useful for ordi
 - **Chi-Square Independence Test:** Used to determine if there is a significant association between two categorical variables.
 - **Chi-Square Goodness of Fit Test:** Used to determine if a sample distribution matches a theoretical population distribution.
 - **Log-Rank Test:** A hypothesis test to compare the survival distributions of two samples. It is widely used in clinical trials and reliability engineering to analyze time-to-event data.
+- **Mann-Kendall Test:** A non-parametric statistical test used to detect the presence of a monotonic trend (increasing or decreasing) in time-series data, without assuming a specific distribution.
 
 Usage
 -----
