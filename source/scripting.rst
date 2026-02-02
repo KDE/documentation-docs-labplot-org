@@ -40,7 +40,7 @@ The next step in such a script depends on obtaining a reference to the current p
    project = project()
 
 After this, you have full access to the project structure and can navigate through it to access or modify its components.
-A simple working example that creates a new worksheet in the current project is shown below:
+A simple working example that creates a new worksheet in the current project is:
 
 .. code-block:: python
 
@@ -55,4 +55,45 @@ A simple working example that creates a new worksheet in the current project is 
    # Add the worksheet to the project
    project.addChild(worksheet)
 
-The Python API documentation can be found in the :ref:`sdk_python` section.
+A more realistic example importing multiple files from a folder and creating plots in separate worksheets for each imported data set is shown below:
+
+.. code-block:: python
+
+   import os
+   from pylabplot import *
+
+   # Get the current project
+   project = project()
+
+   # Define the folder containing the data files
+   data_folder = "/path/to/data/folder"
+
+   # Iterate over all files in the folder
+   for filename in os.listdir(data_folder):
+       if filename.endswith(".txt"):  # Assuming text files
+           file_path = os.path.join(data_folder, filename)
+
+           # Create a new spreadsheet and import data
+           spreadsheet = Spreadsheet(filename)
+           project.addChild(spreadsheet)
+           filter = AsciiFilter()
+           filter.readDataFromFile(file_path, spreadsheet)
+
+           # Create a new worksheet
+           worksheet = Worksheet(f"Worksheet for {filename}")
+           project.addChild(worksheet)
+
+           # Create a plot for the imported data
+           plot_area = CartesianPlot(f"Plot for {filename}")
+           plot_area.setType(CartesianPlot.Type.FourAxes)
+           plot_area.addLegend()
+           worksheet.addChild(plot_area)
+
+           # Create a line plot for the first two columns
+           line_plot = XYCurve(f"Line Plot for {filename}")
+           line_plot.setXColumn(spreadsheet.column(0))
+           line_plot.setYColumn(spreadsheet.column(1))
+           plot_area.addChild(line_plot)
+
+
+The Python API documentation can be found in the :ref:`sdk_python` section which is part of the :ref:`sdk` documentation.
