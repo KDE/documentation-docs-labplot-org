@@ -54,8 +54,9 @@ Non-parametric tests do not assume a normal distribution and are useful for ordi
 - **Friedman Test:** A non-parametric alternative to the One-Way ANOVA with Repeated Measures, used to detect differences in treatments across multiple test attempts.
 - **Chi-Square Independence Test:** Used to determine if there is a significant association between two categorical variables.
 - **Chi-Square Goodness of Fit Test:** Used to determine if a sample distribution matches a theoretical population distribution.
-- **Log-Rank Test:** A hypothesis test to compare the survival distributions of two samples. It is widely used in clinical trials and reliability engineering to analyze time-to-event data.
-- **Mann-Kendall Test:** A non-parametric statistical test used to detect the presence of a monotonic trend (increasing or decreasing) in time-series data, without assuming a specific distribution.
+- **Log-Rank Test:** Used to compare the survival distributions of two samples. It is widely used in clinical trials and reliability engineering to analyze time-to-event data.
+- **Mann-Kendall Test:** Used to detect the presence of a monotonic trend (increasing or decreasing) in time-series data, without assuming a specific distribution.
+- **Wald-Wolfowitz Runs Test:** Used to assesses the randomness of a data sequence by counting the number of consecutive runs of values falling above or below the sample median. It determines if patterns, such as clustering or trends, exist in the dataset.
 
 Usage
 -----
