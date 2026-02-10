@@ -97,3 +97,52 @@ A more realistic example importing multiple files from a folder and creating plo
 
 
 The Python API documentation can be found in the :ref:`sdk_python` section which is part of the :ref:`sdk` documentation.
+
+Usage of Python Packages
+----------------------------------------
+
+The Python scripting environment in LabPlot allows you to use external Python packages in your scripts. To use an external package, you need to ensure that it is installed in the Python environment that LabPlot uses for scripting. You can check the path to this environment and the installed packages by running the following code in the script editor:
+
+.. code-block:: python
+
+   import sys
+   print(sys.executable)  # Path to the Python interpreter used by LabPlot
+   print(sys.path)        # List of paths where Python looks for packages
+
+To check the location of a specific package, you can use the following code:
+
+.. code-block:: python
+
+   import <package-name>
+   print(<package-name>.__file__)  # Path to the package
+
+Additional attention needs to be paid for Linux package formats like AppImage and Flatpak, where the Python environment is sandboxed and does not have access to the system-wide installed packages. In this case, you need to point the sandbox to the already installed packages or to install the required packages within the sandboxed environment
+
+For example, to make AppImage use the system-wide installed packages, you can set the environment variable `PYTHONPATH` to include the path to the system's site-packages directory before launching the AppImage:
+
+.. code-block:: bash
+
+   export PYTHONPATH=/path/to/site-packages:$PYTHONPATH
+   ./labplot-<version>.AppImage
+
+For Flatpak, you can use
+
+.. code-block:: bash
+
+   flatpak override --filesystem=/path/to/site-packages org.kde.LabPlot
+
+to give the Flatpak access to the system's site-packages directory.
+
+Alternatively, you can use
+
+.. code-block:: bash
+
+   flatpak run --command=pip3 org.kde.LabPlot install <package-name>
+
+to install packages in the Flatpak environment. For AppImage, you can use
+
+.. code-block:: bash
+
+   ./labplot-<version>.AppImage --appimage-extract
+
+to extract the AppImage, then navigate to the extracted directory and use the included Python environment to install packages.

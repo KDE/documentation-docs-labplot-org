@@ -399,11 +399,7 @@ This section describes how to use the scripting capabilities to automate tasks.
 
     .. container:: tile no-descr
 
-        :ref:`sdk_cpp`
-
-    .. container:: tile no-descr
-
-        :ref:`sdk_examples`
+        :ref:`scripting`
 
 .. toctree::
    :maxdepth: 2
