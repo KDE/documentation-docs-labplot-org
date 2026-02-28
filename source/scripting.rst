@@ -133,7 +133,18 @@ For Flatpak, you can use
 
 to give the Flatpak access to the system's site-packages directory.
 
-Alternatively, you can use
+Alternatively, you can use the graphical tool **Flatseal** to manage Flatpak permissions without using the command line. Flatseal provides a user-friendly interface to configure filesystem access for Flatpak applications. To grant LabPlot access to system-wide site-packages using Flatseal:
+
+1. Open Flatseal
+2. Select **org.kde.LabPlot** from the list of applications
+3. Navigate to the **Filesystem** section
+4. Under **Other Files**, click the **+** button to add a new path
+5. Enter the path to your system's site-packages directory (e.g., `/usr/lib/python3.x/site-packages`)
+6. The changes are automatically saved
+
+This approach is useful if you prefer a graphical interface or want to manage multiple filesystem permissions for LabPlot.
+
+You can also use
 
 .. code-block:: bash
 
