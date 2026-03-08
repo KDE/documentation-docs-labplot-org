@@ -65,14 +65,14 @@ In the `Import Data` dialog box that will appear, specify the location of the fi
 .. figure:: images/LabPlot_Getting_Started_Import_Dialog.png
     :alt:
     :align: center
-    :width: 650px
+    :width: 450px
 
 Navigate to the `Preview` tab in this dialog box to check whether the structure of the data will be properly read with the current settings.
 
 .. figure:: images/LabPlot_Getting_Started_Import_Dialog_Preview.png
     :alt:
     :align: center
-    :width: 650px
+    :width: 450px
 
 Click the :guilabel:`OK` button to import the data into the :ref:`data_containers_spreadsheet`. After the import, you'll see it in the :ref:`data_containers_spreadsheet`.
 
@@ -96,7 +96,7 @@ The `Plot Spreadsheet Data` dialog box will appear.
 .. figure:: images/LabPlot_Getting_Started_Plot_Data_Dialog.png
     :alt:
     :align: center
-    :width: 650px
+    :width: 450px
 
 LabPlot automatically assigned the "Time" column to the X-axis. We keep all the other settings as shown below in order to visualize the data in a new `plot` on a new 'Worksheet'.
 
@@ -115,4 +115,4 @@ To export the `plot` as an image, choose :menuselection:`Export` from the main m
 .. figure:: images/LabPlot_Getting_Started_Export_Dialog.png
     :alt:
     :align: center
-    :width: 650px
+    :width: 450px
