@@ -9,31 +9,71 @@ Spreadsheet
 Basic Concepts
 --------------------
 
-The :ref:`data_containers_spreadsheet` is the main part of LabPlot when working with data and consists out of columns. ``Column`` is the basic data set in LabPlot used for plotting and data analysis. Every ``column`` of the :ref:`data_containers_spreadsheet` consists of ``cells`` and is specified by its name and the type - `numeric`, `text`, `month names`, `day names` and `date and time`. Also, for each type different representation formats can be assigned like decimal or scientific format for numeric columns etc.
+The :ref:`data_containers_spreadsheet` is the main part of LabPlot when working with data and consists out of columns. ``Column`` is the basic data set in LabPlot used for plotting and data analysis. Every ``column`` of the :ref:`data_containers_spreadsheet` consists of ``cells`` and is specified by its name and the type of the data:
 
-In addition to these properties it is also possible to specify the ``plot designation`` - LabPlot is using this property in some places to to automatically recognize how to plot the data and which columns to use as X, Y, etc.
+* **Double** - floating-point numbers with double precision for decimal values (range:  ±1.79769 × 10\ :sup:`308`)
+* **Integer** - whole numbers, 32-bit signed integers (range: -2,147,483,648 to 2,147,483,647)
+* **Big Integer** - large whole numbers, 64-bit signed integers (range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+* **Text** - alphanumeric strings and text data
+* **Date & Time** - date and time values
+
+For each type different representation formats can be assigned like decimal or scientific format for numeric columns etc. In addition to these properties it is also possible to specify the ``plot designation`` that is used in some places to to automatically recognize how to plot the data and which columns to use as X, Y, etc.
+
+Data Structure
+--------------------------
+There are two commonly used ways to structure the data in the spreadsheet - the "wide" format and the "long" (or "tidy") format. In a wide format, each subject has a single row, and various attributes or time points are spread across multiple columns (e.g., time series data where each time point is a column). For tidy data, each variable is a column and each observation is a row.
+
+For the following example in the wide format for the score obtained by students in three tests
+
+=======  ======  ======  ======
+Name     Test 1  Test 2  Test 3
+=======  ======  ======  ======
+Alice    85      90      88
+Bob      70      75      80
+=======  ======  ======  ======
+
+"Test Number" and "Score" are the actual variables, while "Name" is an identifier. In the tidy format, the same data would be structured as follows:
+
+=======  ===========  ======
+Name     Test Number  Score
+=======  ===========  ======
+Alice    Test 1       85
+Alice    Test 2       90
+Alice    Test 3       88
+Bob      Test 1       70
+Bob      Test 2       75
+Bob      Test 3       80
+=======  ===========  ======
+
+.. important::
+   While both formats are valid and supported in LabPlot, attention needs to be paid to the way how LabPlot operates on the data - namely, for the visualization and analysis, LabPlot always operates on columns and not on rows and therefore different data formats will produce different results.
+
+For example, visualizing the data for both formats in a Bar Plot will produce the following results:
+
+.. image:: images/spreadsheet_bar_plot_wide_format.png
+   :align: center
+   :alt: Bar Plot for the wide format
+
+.. image:: images/spreadsheet_bar_plot_long_format.png
+   :align: center
+   :alt: Bar Plot for the long/tidy format
+
+In the first case, the visualization of the three numerical columns with the scores in a bar plot leads to a "grouped" bar plot with three bars  - each bar represents a score and each group represents a student name. In the second case, the visualization of the "Score" column (the only numerical column in the spreadhseet) leads to a bar plot with six separate bars - one bar for the score values for each combination of "Name" and "Test Number".
 
 
 Import Data
 -----------------
 
-See the video on how to import e.g. an `SPSS` file and export it to text.
-
-.. youtube:: GmGzv6a_5Jk
-   :align: left
-   :width: 650px
 
 Generate Data
 ------------------
 
-See the video on wow to generate and visualize random numbers from the `Uniform`, `Normal (Gaussian)`, `Binomial`, `Poisson`, `Weibull` and many more distributions in LabPlot.
-
-.. youtube:: GmGzv6a_5Jk
-   :align: left
-   :width: 650px
 
 Data Analysis and Visualization
 -----------------------------------
+
+Manipulate Data
+------------------
 
 Mask Data
 ~~~~~~~~~~~~~~
@@ -42,27 +82,19 @@ Sometimes it is required to ignore some data points in the visualization or when
 
 In the example below a ``fit`` was performed to the original data containing some obvious measurement errors and a fit where those outliers were masked.
 
-.. todo:: add a screenshot with two fits
+.. .. todo:: add a screenshot with two fits
 
-Manipulate Data
-~~~~~~~~~~~~~~~~~~~~~~~
+.. Baseline Subtraction (Correction)  
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: add a description
 
-Descriptive Statistics
+Statistics
+-----------------------------------
+
+Column Statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See the video on how to quickly get descriptive statistics with visualization.
+Column Statistics Spreadsheet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. youtube:: 2dJ19VCKRho
-   :align: left
-   :width: 650px
 
-Baseline Subtraction (Correction)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-See the video on how to perform Baseline Subtraction in LabPlot.
-
-.. youtube:: Fl2fACGlYrY
-   :align: left
-   :width: 650px
