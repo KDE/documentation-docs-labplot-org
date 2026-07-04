@@ -90,6 +90,134 @@ To generate values using a formula, select the target column and navigate to the
 
 For detailed information about syntax, available functions, and examples, see :ref:`data_containers_spreadsheet_formulas`.
 
+Random Values
+~~~~~~~~~~~~~~
+
+Columns can be filled with random values from 36 different statistical distributions including Gaussian (normal), uniform, exponential, Poisson, binomial, and many more.
+
+**Common distributions:**
+
+* **Gaussian** (μ, σ) - Normal distribution for natural phenomena
+* **Uniform** (a, b) - Equal probability over a range
+* **Exponential** (λ) - Waiting times between events
+* **Poisson** (λ) - Count data (number of events)
+* **Binomial** (p, n) - Success/failure trials
+
+To generate random values, select one or more columns, right-click and choose **Fill with Random Values**. Configure the distribution parameters and optionally set a seed for reproducible results.
+
+For a complete guide to all distributions, parameters, and use cases, see :ref:`data_containers_spreadsheet_random`.
+
+Other Generation Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In addition to formulas and random values, several utility functions are available in the **Generate Data** context menu for selected columns:
+
+Row Numbers
+^^^^^^^^^^^
+
+Fill columns with sequential row numbers (1, 2, 3, ...). The column type is automatically set to Integer.
+
+**Usage:** Select column(s) → Right-click → Generate Data → **Row Numbers**
+
+**Use cases:**
+
+* Create index columns
+* Number observations sequentially
+* Generate unique identifiers
+
+Const Values
+^^^^^^^^^^^^
+
+Fill columns with a user-specified constant value. An input dialog prompts for the value based on the column type (numeric, text, etc.).
+
+**Usage:** Select column(s) → Right-click → Generate Data → **Const Values**
+
+**Use cases:**
+
+* Initialize columns with default values
+* Fill baseline or reference values
+* Set placeholder data
+
+Equidistant Values
+^^^^^^^^^^^^^^^^^^
+
+Generate arithmetic sequences with precise control over start, end, increment, or count. Three generation modes are available:
+
+* **Fixed Number** - Specify start value, end value, and number of points
+* **Fixed Increment** - Specify start value, increment size, and number of points
+* **Fixed Number & Increment** - Specify start value, increment, and number (end value calculated)
+
+**Usage:** Select column(s) → Right-click → Generate Data → **Equidistant Values**
+
+**Examples:**
+
+* Linear time axis: start=0, end=10, number=100 → [0, 0.101, 0.202, ..., 10]
+* Regular intervals: start=0, increment=0.5, number=20 → [0, 0.5, 1.0, 1.5, ...]
+* Custom sequence: start=5, increment=3, number=10 → [5, 8, 11, 14, ...]
+
+Equidistant Date & Time Values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Generate date/time sequences with configurable units (years, months, days, hours, minutes, seconds, milliseconds).
+
+**Usage:** Select column(s) → Right-click → Generate Data → **Equidistant Date & Time Values**
+
+**Examples:**
+
+* Daily data: 2024-01-01, increment=1 day, number=365
+* Hourly logs: 2024-01-01 00:00, increment=1 hour, number=24
+* Monthly reports: 2024-01-01, increment=1 month, number=12
+
+Sample Values
+^^^^^^^^^^^^^
+
+Downsample or subsample column data using two methods:
+
+* **Periodic** - Take every N-th value (e.g., every 10th point)
+* **Random** - Select random subset based on uniform distribution
+
+**Usage:** Select column(s) → Right-click → Generate Data → **Sample Values**
+
+**Use cases:**
+
+* Reduce data density for plotting
+* Extract representative subset
+* Downsample high-frequency measurements
+
+.. note::
+   Sampling creates new columns with the sampled data; original columns remain unchanged.
+
+Flatten Columns
+^^^^^^^^^^^^^^^
+
+Combine multiple columns into a single column by stacking values vertically. Optionally include reference columns that are repeated for each flattened value (useful for converting wide format to long/tidy format).
+
+**Usage:** Select columns to flatten → Right-click → Generate Data → **Flatten Columns**
+
+**Example:** Converting wide to long format:
+
+.. code-block:: none
+
+   # Wide format (2 columns):
+   Name     Score
+   Alice    85
+   Bob      90
+
+   # Select Score columns from multiple tests
+   # Add "Name" as reference column
+   # Result (long format):
+   Name     Score
+   Alice    85
+   Alice    90
+   Bob      85
+   Bob      90
+
+**Use cases:**
+
+* Convert wide format to tidy/long format for analysis
+* Combine multiple measurement columns
+* Prepare data for grouped visualization
+
 
 Data Analysis and Visualization
 -----------------------------------
