@@ -86,7 +86,7 @@ Columns can be populated with values calculated from formulas. The formula syste
    # Conditional logic
    if(temperature > 0; 1; 0)
 
-To create a formula column, right-click on the column header and select **Formula**. Enter your expression, map variables to columns, and enable **Auto Update** for automatic recalculation.
+To generate values using a formula, select the target column and navigate to the section **Formula** in the Properties Explorer. Enter your expression, map variables to columns, and enable **Auto Update** for automatic recalculation on data changes in the source columns and **Auto Resize** to automatically adjust the size of the target column based on the number of rows in the source columns. The formula system supports referencing other columns in the same spreadsheet or even columns from other spreadsheets within the same project.
 
 For detailed information about syntax, available functions, and examples, see :ref:`data_containers_spreadsheet_formulas`.
 
