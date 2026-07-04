@@ -68,6 +68,28 @@ Import Data
 Generate Data
 ------------------
 
+Column Formulas
+~~~~~~~~~~~~~~
+
+Columns can be populated with values calculated from formulas. The formula system supports over 600 mathematical, statistical, and scientific functions from the GNU Scientific Library (GSL).
+
+**Quick Example:**
+
+.. code-block:: none
+
+   # Calculate distance from origin
+   sqrt(x^2 + y^2)
+
+   # Normalize data (z-score)
+   (value - mean(value)) / stdev(value)
+
+   # Conditional logic
+   if(temperature > 0; 1; 0)
+
+To create a formula column, right-click on the column header and select **Formula**. Enter your expression, map variables to columns, and enable **Auto Update** for automatic recalculation.
+
+For detailed information about syntax, available functions, and examples, see :ref:`data_containers_spreadsheet_formulas`.
+
 
 Data Analysis and Visualization
 -----------------------------------

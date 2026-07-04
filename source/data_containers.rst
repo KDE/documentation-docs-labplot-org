@@ -21,6 +21,7 @@ Data containers
 
    data_containers/data_containers_introduction
    data_containers/data_containers_spreadsheet
+   data_containers/data_containers_spreadsheet_formulas
    data_containers/data_containers_matrix
    data_containers/data_containers_workbook
 
