@@ -69,7 +69,7 @@ Generate Data
 ------------------
 
 Column Formulas
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Columns can be populated with values calculated from formulas. The formula system supports over 600 mathematical, statistical, and scientific functions from the GNU Scientific Library (GSL).
 
@@ -219,11 +219,41 @@ Combine multiple columns into a single column by stacking values vertically. Opt
 * Prepare data for grouped visualization
 
 
-Data Analysis and Visualization
------------------------------------
-
 Manipulate Data
 ------------------
+
+LabPlot provides comprehensive tools for transforming and cleaning column data through the **Manipulate Data** context menu. All operations support undo/redo and work on multiple columns simultaneously.
+
+**Main categories:**
+
+* **Arithmetic Operations** - Add, subtract, multiply, divide by values or statistical measures
+
+  * Add/subtract custom values, mean, median, min, max
+  * Advanced baseline subtraction using arPLS algorithm
+  * Multiply/divide for unit conversions and scaling
+
+* **Data Filtering** - Drop or mask values based on criteria
+
+  * **Drop Values** - Permanently remove values (outliers, invalid data)
+  * **Mask Values** - Temporarily exclude from plots and analysis (preserves original data)
+
+* **Normalization** (15 methods) - Scale data for comparison
+
+  * Basic: Divide by sum, min, max, count
+  * Central tendency: Divide by mean, median, mode
+  * Spread: Divide by range, SD, MAD, IQR
+  * Standardization: Z-scores (SD, MAD, IQR)
+  * Rescale to arbitrary interval [a, b]
+
+* **Transformations** - Tukey's Ladder of Powers
+
+  * x³, x², √x, log(x), 1/√x, 1/x, 1/x² - improve normality, stabilize variance
+
+* **Data Reordering** - Reverse column order
+
+**Usage:** Select column(s) → Right-click → **Manipulate Data** → Choose operation
+
+For detailed information about all operations, parameters, and use cases, see :ref:`data_containers_spreadsheet_manipulate`.
 
 Mask Data
 ~~~~~~~~~~~~~~
@@ -234,9 +264,15 @@ In the example below a ``fit`` was performed to the original data containing som
 
 .. .. todo:: add a screenshot with two fits
 
-.. Baseline Subtraction (Correction)  
+.. note::
+   Masking can also be done based on value criteria using **Manipulate Data → Mask Values**. See :ref:`data_containers_spreadsheet_manipulate` for details.
+
+.. Baseline Subtraction (Correction)
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+Data Analysis and Visualization
+-----------------------------------
 
 Statistics
 -----------------------------------
@@ -246,5 +282,3 @@ Column Statistics
 
 Column Statistics Spreadsheet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
