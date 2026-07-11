@@ -271,6 +271,58 @@ In the example below a ``fit`` was performed to the original data containing som
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+Keyboard Shortcuts
+--------------------
+
+The spreadsheet supports the following keyboard shortcuts for efficient data manipulation:
+
+Editing Operations
+~~~~~~~~~~~~~~~~~~~
+
+====================================    ========================================
+Key/Mouse Event                         Function
+====================================    ========================================
+:kbd:`Ctrl+C`                           Copy selected cells
+:kbd:`Ctrl+V`                           Paste into selected cells
+:kbd:`Ctrl+X`                           Cut selected cells
+:kbd:`Del` or :kbd:`Backspace`          Clear content of selected cells
+:kbd:`Insert`                           Insert column (if column selected) or row
+====================================    ========================================
+
+Navigation and Selection
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================    ========================================
+Key/Mouse Event                         Function
+====================================    ========================================
+:kbd:`Ctrl+A`                           Select all cells
+:kbd:`Return` or :kbd:`Enter`           Move to next row in same column
+====================================    ========================================
+
+Search and Replace
+~~~~~~~~~~~~~~~~~~~
+
+====================================    ========================================
+Key/Mouse Event                         Function
+====================================    ========================================
+:kbd:`Ctrl+F`                           Open search dialog
+:kbd:`Ctrl+H`                           Open search and replace dialog
+:kbd:`Escape`                           Close search/replace dialog
+====================================    ========================================
+
+View Operations
+~~~~~~~~~~~~~~~~
+
+====================================    ========================================
+Key/Mouse Event                         Function
+====================================    ========================================
+:kbd:`Ctrl++` or :kbd:`Ctrl+=`          Zoom in
+:kbd:`Ctrl+-`                           Zoom out
+:kbd:`Ctrl+0`                           Reset zoom to 100%
+:kbd:`Ctrl+Mouse Wheel`                 Zoom in/out
+====================================    ========================================
+
+
 Data Analysis and Visualization
 -----------------------------------
 

@@ -75,3 +75,30 @@ Drag&Drop
 .. youtube:: Yw5Hivcp2y8
    :align: left
    :width: 650px
+
+
+Keyboard Shortcuts
+--------------------
+
+The :ref:`interface_project_explorer` supports the following keyboard shortcuts for efficient object management:
+
+.. list-table::
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`Del`
+     - Delete the selected object(s). A confirmation dialog will be shown before deletion.
+   * - :kbd:`Ctrl+C`
+     - Copy the selected object to the clipboard.
+   * - :kbd:`Ctrl+V`
+     - Paste an object from the clipboard into the selected parent object, or paste data into a selected spreadsheet column.
+   * - :kbd:`Ctrl+D`
+     - Duplicate the selected object.
+   * - :kbd:`Ctrl+Up`
+     - Move the selected object up in the list within its parent container.
+   * - :kbd:`Ctrl+Down`
+     - Move the selected object down in the list within its parent container.
+   * - :kbd:`Space`
+     - Toggle the visibility of the selected worksheet element(s).
