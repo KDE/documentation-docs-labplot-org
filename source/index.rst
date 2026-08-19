@@ -309,6 +309,24 @@ This section describes import and export functionality.
 
     import_export
 
+###########################
+Command-Line Interface (CLI)
+###########################
+
+This section describes how to use LabPlot from the command line for automation and batch processing.
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`command_line`
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    command_line
+
 ########################
 Themes and Templates
 ########################
