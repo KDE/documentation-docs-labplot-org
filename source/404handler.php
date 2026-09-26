@@ -16,30 +16,7 @@
 //       all_langs list in resources/static/js/version_switch.js file from this repository needs to be also updated.
 
 $supported_languages = array(
-    "ca",
-    "cs",
-    "da",
-    "de",
-    "en",
-    "es",
-    "fi",
-    "fr",
-    "it",
-    "ja",
-    "ko",
-    "lt",
-    "nl",
-    "sk",
-    "sl",
-    "sv",
-    "ru",
-    "tr",
-    "pl",
-    "pt_BR",
-    "pt_PT",
-    "uk_UA",
-    "zh_CN",
-    "zh_TW"
+    "en"
 );
 
 // List of page redirect rules
