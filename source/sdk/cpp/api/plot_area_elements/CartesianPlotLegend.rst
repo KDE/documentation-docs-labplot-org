@@ -1,7 +1,6 @@
 CartesianPlotLegend
 ============================
 
-A description for CartesianPlotLegend.
 
-.. doxygenclass:: CartesianPlotLegend
+.. doxygenclass-toc:: CartesianPlotLegend
    :members:

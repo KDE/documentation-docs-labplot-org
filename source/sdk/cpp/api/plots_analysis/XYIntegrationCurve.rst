@@ -1,7 +1,6 @@
 XYIntegrationCurve
 ============================
 
-A description for XYIntegrationCurve.
 
-.. doxygenclass:: XYIntegrationCurve
+.. doxygenclass-toc:: XYIntegrationCurve
    :members:

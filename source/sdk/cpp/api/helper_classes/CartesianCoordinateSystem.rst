@@ -1,7 +1,6 @@
 CartesianCoordinateSystem
 ============================
 
-A description for CartesianCoordinateSystem.
 
-.. doxygenclass:: CartesianCoordinateSystem
+.. doxygenclass-toc:: CartesianCoordinateSystem
    :members:

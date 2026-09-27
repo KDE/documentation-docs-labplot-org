@@ -1,7 +1,6 @@
 KDEPlot
 ============================
 
-A description for KDEPlot.
 
-.. doxygenclass:: KDEPlot
+.. doxygenclass-toc:: KDEPlot
    :members:

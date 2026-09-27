@@ -1,7 +1,6 @@
 OdsFilter
 ============================
 
-A description for OdsFilter.
 
-.. doxygenclass:: OdsFilter
+.. doxygenclass-toc:: OdsFilter
    :members:

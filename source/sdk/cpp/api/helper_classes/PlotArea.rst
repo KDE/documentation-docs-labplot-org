@@ -1,7 +1,6 @@
 PlotArea
 ============================
 
-A description for PlotArea.
 
-.. doxygenclass:: PlotArea
+.. doxygenclass-toc:: PlotArea
    :members:

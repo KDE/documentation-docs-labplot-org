@@ -1,7 +1,6 @@
 HDF5Filter
 ============================
 
-A description for HDF5Filter.
 
-.. doxygenclass:: HDF5Filter
+.. doxygenclass-toc:: HDF5Filter
    :members:

@@ -1,7 +1,6 @@
 CartesianPlot
 ============================
 
-A description for CartesianPlot.
 
-.. doxygenclass:: CartesianPlot
+.. doxygenclass-toc:: CartesianPlot
    :members:

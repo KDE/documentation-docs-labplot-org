@@ -1,7 +1,6 @@
 Axis
 ============================
 
-A description for Axis.
 
-.. doxygenclass:: Axis
+.. doxygenclass-toc:: Axis
    :members:

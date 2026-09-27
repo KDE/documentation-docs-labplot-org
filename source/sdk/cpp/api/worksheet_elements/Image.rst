@@ -1,7 +1,6 @@
 Image
 ============================
 
-A description for Image.
 
-.. doxygenclass:: Image
+.. doxygenclass-toc:: Image
    :members:

@@ -1,7 +1,6 @@
 SpiceFilter
 ============================
 
-A description for SpiceFilter.
 
-.. doxygenclass:: SpiceFilter
+.. doxygenclass-toc:: SpiceFilter
    :members:

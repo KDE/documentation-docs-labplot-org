@@ -1,7 +1,6 @@
 WorksheetElement
 ============================
 
-A description for WorksheetElement.
 
-.. doxygenclass:: WorksheetElement
+.. doxygenclass-toc:: WorksheetElement
    :members:    

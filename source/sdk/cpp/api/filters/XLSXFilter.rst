@@ -1,7 +1,6 @@
 XLSXFilter
 ============================
 
-A description for XLSXFilter.
 
-.. doxygenclass:: XLSXFilter
+.. doxygenclass-toc:: XLSXFilter
    :members:

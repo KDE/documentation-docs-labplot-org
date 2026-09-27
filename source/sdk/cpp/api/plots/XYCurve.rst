@@ -1,7 +1,6 @@
 XYCurve
 ============================
 
-A description for XYCurve.
 
-.. doxygenclass:: XYCurve
+.. doxygenclass-toc:: XYCurve
    :members:

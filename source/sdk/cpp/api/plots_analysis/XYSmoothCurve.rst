@@ -1,7 +1,6 @@
 XYSmoothCurve
 ============================
 
-A description for XYSmoothCurve.
 
-.. doxygenclass:: XYSmoothCurve
+.. doxygenclass-toc:: XYSmoothCurve
    :members:

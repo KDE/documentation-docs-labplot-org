@@ -1,7 +1,6 @@
 XYFourierFilterCurve
 ============================
 
-A description for XYFourierFilterCurve.
 
-.. doxygenclass:: XYFourierFilterCurve
+.. doxygenclass-toc:: XYFourierFilterCurve
    :members:

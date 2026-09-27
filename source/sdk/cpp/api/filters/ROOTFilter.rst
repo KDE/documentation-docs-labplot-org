@@ -1,7 +1,6 @@
 ROOTFilter
 ============================
 
-A description for ROOTFilter.
 
-.. doxygenclass:: ROOTFilter
+.. doxygenclass-toc:: ROOTFilter
    :members:

@@ -1,7 +1,6 @@
 XYFourierTransformCurve
 ============================
 
-A description for XYFourierTransformCurve.
 
-.. doxygenclass:: XYFourierTransformCurve
+.. doxygenclass-toc:: XYFourierTransformCurve
    :members:

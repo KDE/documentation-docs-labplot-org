@@ -1,7 +1,6 @@
 BarPlot
 ============================
 
-A description for BarPlot.
 
-.. doxygenclass:: BarPlot
+.. doxygenclass-toc:: BarPlot
    :members:

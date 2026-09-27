@@ -1,7 +1,6 @@
 AbstractColumn
 ============================
 
-A description for AbstractColumn.
 
-.. doxygenclass:: AbstractColumn
+.. doxygenclass-toc:: AbstractColumn
    :members:    

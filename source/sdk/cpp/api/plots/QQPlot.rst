@@ -1,7 +1,6 @@
 QQPlot
 ============================
 
-A description for QQPlot.
 
-.. doxygenclass:: QQPlot
+.. doxygenclass-toc:: QQPlot
    :members:

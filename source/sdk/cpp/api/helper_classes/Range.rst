@@ -1,7 +1,6 @@
 Range
 ============================
 
-A description for Range.
 
-.. doxygenclass:: Range
+.. doxygenclass-toc:: Range
    :members:

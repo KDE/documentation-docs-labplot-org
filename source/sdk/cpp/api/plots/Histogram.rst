@@ -1,7 +1,6 @@
 Histogram
 ============================
 
-A description for Histogram.
 
-.. doxygenclass:: Histogram
+.. doxygenclass-toc:: Histogram
    :members:

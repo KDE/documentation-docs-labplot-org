@@ -1,7 +1,6 @@
 XYCorrelationCurve
 ============================
 
-A description for XYCorrelationCurve.
 
-.. doxygenclass:: XYCorrelationCurve
+.. doxygenclass-toc:: XYCorrelationCurve
    :members:

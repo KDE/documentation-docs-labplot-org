@@ -1,7 +1,6 @@
 StatisticsSpreadsheet
 ============================
 
-A description for StatisticsSpreadsheet.
 
-.. doxygenclass:: StatisticsSpreadsheet
+.. doxygenclass-toc:: StatisticsSpreadsheet
    :members:

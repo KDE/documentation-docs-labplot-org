@@ -1,7 +1,6 @@
 AbstractFileFilter
 ============================
 
-A description for AbstractFileFilter.
 
-.. doxygenclass:: AbstractFileFilter
+.. doxygenclass-toc:: AbstractFileFilter
    :members:    

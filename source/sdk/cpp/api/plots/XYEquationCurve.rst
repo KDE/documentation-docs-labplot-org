@@ -1,7 +1,6 @@
 XYEquationCurve
 ============================
 
-A description for XYEquationCurve.
 
-.. doxygenclass:: XYEquationCurve
+.. doxygenclass-toc:: XYEquationCurve
    :members:

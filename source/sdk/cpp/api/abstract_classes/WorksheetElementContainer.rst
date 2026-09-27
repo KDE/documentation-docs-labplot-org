@@ -1,7 +1,6 @@
 WorksheetElementContainer
 ============================
 
-A description for WorksheetElementContainer.
 
-.. doxygenclass:: WorksheetElementContainer
+.. doxygenclass-toc:: WorksheetElementContainer
    :members:    

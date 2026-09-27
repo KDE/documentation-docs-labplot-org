@@ -1,7 +1,6 @@
 AbstractPart
 ============================
 
-A description for AbstractPart.
 
-.. doxygenclass:: AbstractPart
+.. doxygenclass-toc:: AbstractPart
    :members:    

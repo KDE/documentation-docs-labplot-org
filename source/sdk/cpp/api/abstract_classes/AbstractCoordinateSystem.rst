@@ -1,7 +1,6 @@
 AbstractCoordinateSystem
 ============================
 
-A description for AbstractCoordinateSystem.
 
-.. doxygenclass:: AbstractCoordinateSystem
+.. doxygenclass-toc:: AbstractCoordinateSystem
    :members:    

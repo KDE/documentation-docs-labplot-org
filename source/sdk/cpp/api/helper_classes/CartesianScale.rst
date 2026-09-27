@@ -1,7 +1,6 @@
 CartesianScale
 ============================
 
-A description for CartesianScale.
 
-.. doxygenclass:: CartesianScale
+.. doxygenclass-toc:: CartesianScale
    :members:

@@ -1,7 +1,6 @@
 XYFitCurve
 ============================
 
-A description for XYFitCurve.
 
-.. doxygenclass:: XYFitCurve
+.. doxygenclass-toc:: XYFitCurve
    :members:

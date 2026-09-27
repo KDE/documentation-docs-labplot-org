@@ -1,7 +1,6 @@
 CANFilter
 ============================
 
-A description for CANFilter.
 
-.. doxygenclass:: CANFilter
+.. doxygenclass-toc:: CANFilter
    :members:

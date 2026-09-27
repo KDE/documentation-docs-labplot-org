@@ -1,7 +1,6 @@
 XYDataReductionCurve
 ============================
 
-A description for XYDataReductionCurve.
 
-.. doxygenclass:: XYDataReductionCurve
+.. doxygenclass-toc:: XYDataReductionCurve
    :members:

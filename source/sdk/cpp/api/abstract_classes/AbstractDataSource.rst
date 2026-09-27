@@ -1,7 +1,6 @@
 AbstractDataSource
 ============================
 
-A description for AbstractDataSource.
 
-.. doxygenclass:: AbstractDataSource
+.. doxygenclass-toc:: AbstractDataSource
    :members:    

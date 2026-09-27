@@ -1,7 +1,6 @@
 Symbol
 ============================
 
-A description for Symbol.
 
-.. doxygenclass:: Symbol
+.. doxygenclass-toc:: Symbol
    :members:

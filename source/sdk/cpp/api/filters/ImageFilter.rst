@@ -1,7 +1,6 @@
 ImageFilter
 ============================
 
-A description for ImageFilter.
 
-.. doxygenclass:: ImageFilter
+.. doxygenclass-toc:: ImageFilter
    :members:

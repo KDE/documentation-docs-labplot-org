@@ -1,7 +1,6 @@
 McapFilter
 ============================
 
-A description for McapFilter.
 
-.. doxygenclass:: McapFilter
+.. doxygenclass-toc:: McapFilter
    :members:

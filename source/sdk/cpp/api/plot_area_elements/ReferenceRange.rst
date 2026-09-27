@@ -1,7 +1,6 @@
 ReferenceRange
 ============================
 
-A description for ReferenceRange.
 
-.. doxygenclass:: ReferenceRange
+.. doxygenclass-toc:: ReferenceRange
    :members:

@@ -1,7 +1,6 @@
 VectorBLFFilter
 ============================
 
-A description for VectorBLFFilter.
 
-.. doxygenclass:: VectorBLFFilter
+.. doxygenclass-toc:: VectorBLFFilter
    :members:

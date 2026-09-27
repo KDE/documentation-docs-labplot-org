@@ -1,7 +1,6 @@
 XYAnalysisCurve
 ============================
 
-A description for XYAnalysisCurve.
 
-.. doxygenclass:: XYAnalysisCurve
+.. doxygenclass-toc:: XYAnalysisCurve
    :members:    

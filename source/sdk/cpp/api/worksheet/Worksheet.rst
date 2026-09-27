@@ -1,7 +1,6 @@
 Worksheet
 ============================
 
-A description for Worksheet.
 
-.. doxygenclass:: Worksheet
+.. doxygenclass-toc:: Worksheet
    :members:

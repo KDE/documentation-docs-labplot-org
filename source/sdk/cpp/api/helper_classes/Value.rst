@@ -1,7 +1,6 @@
 Value
 ============================
 
-A description for Value.
 
-.. doxygenclass:: Value
+.. doxygenclass-toc:: Value
    :members:

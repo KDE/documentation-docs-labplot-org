@@ -1,7 +1,6 @@
 BinaryFilter
 ============================
 
-A description for BinaryFilter.
 
-.. doxygenclass:: BinaryFilter
+.. doxygenclass-toc:: BinaryFilter
    :members:

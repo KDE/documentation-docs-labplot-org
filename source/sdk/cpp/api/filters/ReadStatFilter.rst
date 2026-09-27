@@ -1,7 +1,6 @@
 ReadStatFilter
 ============================
 
-A description for ReadStatFilter.
 
-.. doxygenclass:: ReadStatFilter
+.. doxygenclass-toc:: ReadStatFilter
    :members:

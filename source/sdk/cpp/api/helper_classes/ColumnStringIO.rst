@@ -1,7 +1,6 @@
 ColumnStringIO
 ============================
 
-A description for ColumnStringIO.
 
-.. doxygenclass:: ColumnStringIO
+.. doxygenclass-toc:: ColumnStringIO
    :members:

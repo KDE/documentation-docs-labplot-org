@@ -1,7 +1,6 @@
 Column
 ============================
 
-A description for Column.
 
-.. doxygenclass:: Column
+.. doxygenclass-toc:: Column
    :members:

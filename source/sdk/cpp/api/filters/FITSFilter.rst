@@ -1,7 +1,6 @@
 FITSFilter
 ============================
 
-A description for FITSFilter.
 
-.. doxygenclass:: FITSFilter
+.. doxygenclass-toc:: FITSFilter
    :members:

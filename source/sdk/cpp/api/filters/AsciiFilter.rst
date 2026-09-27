@@ -1,7 +1,6 @@
 AsciiFilter
 ============================
 
-A description for AsciiFilter.
 
-.. doxygenclass:: AsciiFilter
+.. doxygenclass-toc:: AsciiFilter
    :members:

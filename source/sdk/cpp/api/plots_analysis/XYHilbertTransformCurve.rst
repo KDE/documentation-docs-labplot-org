@@ -1,7 +1,6 @@
 XYHilbertTransformCurve
 ============================
 
-A description for XYHilbertTransformCurve.
 
-.. doxygenclass:: XYHilbertTransformCurve
+.. doxygenclass-toc:: XYHilbertTransformCurve
    :members:

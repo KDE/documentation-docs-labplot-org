@@ -1,7 +1,6 @@
 Plot
 ============================
 
-A description for Plot.
 
-.. doxygenclass:: Plot
+.. doxygenclass-toc:: Plot
    :members:    

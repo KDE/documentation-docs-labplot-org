@@ -1,7 +1,6 @@
 Project
 ============================
 
-A description for Project.
 
-.. doxygenclass:: Project
+.. doxygenclass-toc:: Project
    :members:

@@ -1,7 +1,6 @@
 BoxPlot
 ============================
 
-A description for BoxPlot.
 
-.. doxygenclass:: BoxPlot
+.. doxygenclass-toc:: BoxPlot
    :members:

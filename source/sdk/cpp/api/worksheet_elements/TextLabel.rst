@@ -1,7 +1,6 @@
 TextLabel
 ============================
 
-A description for TextLabel.
 
-.. doxygenclass:: TextLabel
+.. doxygenclass-toc:: TextLabel
    :members:

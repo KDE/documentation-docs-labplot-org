@@ -101,6 +101,63 @@ The `html-sdk` rule clones the LabPlot sources into a `labplot` folder. This ste
 
 The generated HTML file is located in: `build/html/index.html`. Open it in your browser to see the compiled documentation.
 
+### C++ SDK Documentation
+
+The C++ SDK documentation uses [Breathe](https://breathe.readthedocs.io/) to integrate doxygen-generated XML into Sphinx. We extend Breathe's output with a custom Sphinx extension (`source/_ext/method_toc.py`) that provides a Qt-style documentation layout.
+
+#### Custom `doxygenclass-toc` Directive
+
+The RST files in `source/sdk/cpp/api/` use our custom `doxygenclass-toc` directive instead of Breathe's standard `doxygenclass`. This directive generates documentation in the following order:
+
+1. **Brief description** - The `\brief` doxygen comment for the class
+2. **Public Types** - A list of public enums
+3. **Public Methods** - A summary table with two columns:
+   - Return type (e.g., `void`, `QString`, `QWidget*`)
+   - Method signature (name + parameters)
+4. **Detailed Description** - Full Breathe output with formatted method documentation
+
+This layout mirrors the [Qt documentation style](https://doc.qt.io/qt-6/qpainter.html), providing a quick overview of available methods before the detailed descriptions.
+
+#### Adding New Classes
+
+To document a new C++ class, create an RST file with:
+
+```rst
+ClassName
+=========
+
+.. doxygenclass-toc:: ClassName
+   :members:
+```
+
+The class description and all method documentation are pulled automatically from doxygen comments in the C++ source code.
+
+### Python SDK Documentation
+
+The Python SDK documentation in `source/sdk/python/api/` is generated from the C++ doxygen comments using Shiboken's qtdoc generator. This requires a full LabPlot build environment and cannot be automated on CI.
+
+To regenerate the Python API docs after updating doxygen comments in C++:
+
+1. Build pylabplot in your local LabPlot build directory:
+   ```bash
+   cd /path/to/labplot/build
+   make pylabplot
+   ```
+
+2. Run shiboken6 with the qtdoc generator:
+   ```bash
+   shiboken6 --generator-set=qtdoc \
+     --doc-parser=doxygen \
+     --documentation-data-dir=/path/to/labplot/build/xml \
+     --output-directory=source/sdk/python/api \
+     /path/to/labplot/lib/python/bindings.xml \
+     /path/to/labplot/lib/python/bindings.h
+   ```
+
+3. Review and commit the generated RST files.
+
+Note: The shiboken6 qtdoc generator requires Qt headers and PySide6 typesystems which are only available in a full build environment, not via pip-installed PySide6.
+
 ## Update the online documentation
 
 To publish your changes online, you have to create a merge request (to merge your changes with the changes which have been already published online). For this create a new branch (because you are not allowed to push your changes directly to the master branch).

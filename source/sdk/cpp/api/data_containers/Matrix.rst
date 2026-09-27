@@ -1,7 +1,6 @@
 Matrix
 ============================
 
-A description for Matrix.
 
-.. doxygenclass:: Matrix
+.. doxygenclass-toc:: Matrix
    :members:

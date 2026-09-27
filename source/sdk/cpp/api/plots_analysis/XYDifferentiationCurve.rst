@@ -1,7 +1,6 @@
 XYDifferentiationCurve
 ============================
 
-A description for XYDifferentiationCurve.
 
-.. doxygenclass:: XYDifferentiationCurve
+.. doxygenclass-toc:: XYDifferentiationCurve
    :members:

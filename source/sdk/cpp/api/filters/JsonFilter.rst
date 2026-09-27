@@ -1,7 +1,6 @@
 JsonFilter
 ============================
 
-A description for JsonFilter.
 
-.. doxygenclass:: JsonFilter
+.. doxygenclass-toc:: JsonFilter
    :members:

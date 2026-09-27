@@ -1,7 +1,6 @@
 ErrorBar
 ============================
 
-A description for ErrorBar.
 
-.. doxygenclass:: ErrorBar
+.. doxygenclass-toc:: ErrorBar
    :members:

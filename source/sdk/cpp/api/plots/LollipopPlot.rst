@@ -1,7 +1,6 @@
 LollipopPlot
 ============================
 
-A description for LollipopPlot.
 
-.. doxygenclass:: LollipopPlot
+.. doxygenclass-toc:: LollipopPlot
    :members:

@@ -1,7 +1,6 @@
 RunChart
 ============================
 
-A description for RunChart.
 
-.. doxygenclass:: RunChart
+.. doxygenclass-toc:: RunChart
    :members:

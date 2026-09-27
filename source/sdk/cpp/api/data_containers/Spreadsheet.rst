@@ -1,7 +1,6 @@
 Spreadsheet
 ============================
 
-A description for Spreadsheet.
 
-.. doxygenclass:: Spreadsheet
+.. doxygenclass-toc:: Spreadsheet
    :members:

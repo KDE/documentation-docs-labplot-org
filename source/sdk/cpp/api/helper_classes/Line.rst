@@ -1,7 +1,6 @@
 Line
 ============================
 
-A description for Line.
 
-.. doxygenclass:: Line
+.. doxygenclass-toc:: Line
    :members:

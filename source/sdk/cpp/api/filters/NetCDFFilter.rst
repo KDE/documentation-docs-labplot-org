@@ -1,7 +1,6 @@
 NetCDFFilter
 ============================
 
-A description for NetCDFFilter.
 
-.. doxygenclass:: NetCDFFilter
+.. doxygenclass-toc:: NetCDFFilter
    :members:

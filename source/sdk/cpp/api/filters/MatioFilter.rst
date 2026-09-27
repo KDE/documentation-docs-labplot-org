@@ -1,7 +1,6 @@
 MatioFilter
 ============================
 
-A description for MatioFilter.
 
-.. doxygenclass:: MatioFilter
+.. doxygenclass-toc:: MatioFilter
    :members:

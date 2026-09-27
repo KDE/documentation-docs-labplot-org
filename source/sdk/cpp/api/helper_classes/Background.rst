@@ -1,7 +1,6 @@
 Background
 ============================
 
-A description for Background.
 
-.. doxygenclass:: Background
+.. doxygenclass-toc:: Background
    :members:

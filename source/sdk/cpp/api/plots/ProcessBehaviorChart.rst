@@ -1,7 +1,6 @@
 ProcessBehaviorChart
 ============================
 
-A description for ProcessBehaviorChart.
 
-.. doxygenclass:: ProcessBehaviorChart
+.. doxygenclass-toc:: ProcessBehaviorChart
    :members:

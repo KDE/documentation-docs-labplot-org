@@ -1,7 +1,6 @@
 AbstractAspect
 ============================
 
-A description for AbstractAspect.
 
-.. doxygenclass:: AbstractAspect
+.. doxygenclass-toc:: AbstractAspect
    :members:

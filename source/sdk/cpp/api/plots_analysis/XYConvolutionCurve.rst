@@ -1,7 +1,6 @@
 XYConvolutionCurve
 ============================
 
-A description for XYConvolutionCurve.
 
-.. doxygenclass:: XYConvolutionCurve
+.. doxygenclass-toc:: XYConvolutionCurve
    :members:

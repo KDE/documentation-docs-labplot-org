@@ -1,7 +1,6 @@
 CustomPoint
 ============================
 
-A description for CustomPoint.
 
-.. doxygenclass:: CustomPoint
+.. doxygenclass-toc:: CustomPoint
    :members:

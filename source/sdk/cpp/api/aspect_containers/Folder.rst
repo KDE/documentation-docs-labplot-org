@@ -1,7 +1,6 @@
 Folder
 ============================
 
-A description for Folder.
 
-.. doxygenclass:: Folder
+.. doxygenclass-toc:: Folder
    :members:

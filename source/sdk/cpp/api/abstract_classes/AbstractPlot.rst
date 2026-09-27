@@ -1,7 +1,6 @@
 AbstractPlot
 ============================
 
-A description for AbstractPlot.
 
-.. doxygenclass:: AbstractPlot
+.. doxygenclass-toc:: AbstractPlot
    :members:    

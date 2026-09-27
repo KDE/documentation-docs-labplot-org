@@ -1,7 +1,6 @@
 XYInterpolationCurve
 ============================
 
-A description for XYInterpolationCurve.
 
-.. doxygenclass:: XYInterpolationCurve
+.. doxygenclass-toc:: XYInterpolationCurve
    :members:
