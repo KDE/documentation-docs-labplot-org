@@ -5,7 +5,7 @@ Getting Started
 Installation
 ############
 
-The LabPlot C++ SDK is included with a LabPlot installation. Please refer to the official LabPlot `website <https://labplot.org/download/>`_ for how to get a LabPlot installation for your respective system.
+The LabPlot C++ SDK is included with a LabPlot installation. Please refer to the official LabPlot `website <https://labplot.org/pages/download/>`_ for how to get a LabPlot installation for your respective system.
 
 #####
 CMake
