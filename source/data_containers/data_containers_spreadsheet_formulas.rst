@@ -35,6 +35,25 @@ Syntax Rules
 * **Constants**: ``pi``, ``e``, and others from GSL
 * **Cross-spreadsheet**: Variables can reference columns from any spreadsheet in the project
 
+.. important::
+   **Column-based functions require column names, not expressions**
+
+   Functions that operate on entire columns or need row context (statistics, moving averages, cumulative functions) require a **column name** as their argument, not an expression:
+
+   .. code-block:: none
+
+      mean(x)           # ✓ Correct - column name
+      mean(x / 10)      # ✗ Error - expression not allowed
+      unwrap(phase)     # ✓ Correct - column name
+      unwrap(phase * 2) # ✗ Error - expression not allowed
+
+   **Workaround:** Create a helper column with the expression, then reference that column:
+
+   1. Create column ``helper`` with formula ``x / 10``
+   2. Use ``mean(helper)`` or ``unwrap(helper)``
+
+   This applies to: column statistics (``mean``, ``sum``, ``min``, ``max``, ``stdev``, etc.), moving statistics (``sma``, ``smmin``, ``smmax``), cumulative functions (``cumsum``, ``cumprod``, ``diff``, ``unwrap``), and cell access functions (``cell``).
+
 Examples
 ~~~~~~~~~~~~~~
 
@@ -137,6 +156,33 @@ Standard Mathematical Functions
    * - ``sgn(x)``
      - Sign (-1, 0, 1)
      - ``sgn(-5)`` → -1
+   * - ``exp2(x)``
+     - Power of 2 (2\ :sup:`x`)
+     - ``exp2(3)`` → 8
+   * - ``square(x)``
+     - Square (x²)
+     - ``square(5)`` → 25
+   * - ``reciprocal(x)``
+     - Reciprocal (1/x)
+     - ``reciprocal(4)`` → 0.25
+   * - ``clip(x; min; max)``
+     - Clamp to range [min, max]
+     - ``clip(x; 0; 100)``
+   * - ``fmod(x; y)``
+     - Floating-point remainder (same sign as x)
+     - ``fmod(5.5; 2)`` → 1.5
+   * - ``remainder(x; y)``
+     - IEEE remainder (nearest integer quotient)
+     - ``remainder(5.5; 2)`` → -0.5
+   * - ``heaviside(x; h0)``
+     - Heaviside step function (h0 at x=0)
+     - ``heaviside(x; 0.5)``
+   * - ``gcd(a; b)``
+     - Greatest common divisor
+     - ``gcd(12; 8)`` → 4
+   * - ``lcm(a; b)``
+     - Least common multiple
+     - ``lcm(4; 6)`` → 12
 
 Comparison and Logical Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -271,6 +317,68 @@ Operate on sliding windows of data.
      - Moving range
      - ``smr(5; x)``
 
+Cumulative and Sequential Functions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Functions that operate sequentially on data, computing values based on all previous rows.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 50 20
+
+   * - Function
+     - Description
+     - Example
+   * - ``cumsum(col)``
+     - Cumulative sum up to current row
+     - ``cumsum(x)``
+   * - ``cumprod(col)``
+     - Cumulative product up to current row
+     - ``cumprod(x)``
+   * - ``diff(col)``
+     - Difference from previous row (NaN for first row)
+     - ``diff(x)``
+   * - ``lag(n; col)``
+     - Value from n rows before (NaN if out of bounds)
+     - ``lag(1; x)``
+   * - ``lead(n; col)``
+     - Value from n rows after (NaN if out of bounds)
+     - ``lead(1; x)``
+   * - ``unwrap(col)``
+     - Unwrap phase angles (period 2π)
+     - ``unwrap(phase)``
+   * - ``unwrapp(period; col)``
+     - Unwrap with custom period
+     - ``unwrapp(360; angle)``
+
+**Examples:**
+
+.. code-block:: none
+
+   # Running total of sales
+   cumsum(sales)
+
+   # Row-to-row differences (velocity from position)
+   diff(position)
+
+   # Compound growth factor
+   cumprod(1 + rate)
+
+   # Previous row value (lag by 1)
+   lag(1; price)
+
+   # Next row value (lead by 1)
+   lead(1; price)
+
+   # Change from previous row
+   x - lag(1; x)
+
+   # Unwrap phase angles in radians (removes 2π discontinuities)
+   unwrap(phase)
+
+   # Unwrap degree angles (removes 360° discontinuities)
+   unwrapp(360; angle_degrees)
+
 Cell Access Functions
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -320,11 +428,16 @@ Trigonometric Functions
 
 All angles in radians. Available functions: ``sin``, ``cos``, ``tan``, ``asin``, ``acos``, ``atan``, ``atan2``, ``sinh``, ``cosh``, ``tanh``, ``asinh``, ``acosh``, ``atanh``, and many more.
 
-**Example: Convert degrees to radians**
+**Angle conversion:**
+
+* ``deg2rad(degrees)`` - Convert degrees to radians
+* ``rad2deg(radians)`` - Convert radians to degrees
+
+**Example: Using degree conversion**
 
 .. code-block:: none
 
-   sin(angle_degrees * pi / 180)
+   sin(deg2rad(45))  # sin of 45 degrees
 
 **Example: Hypotenuse**
 
@@ -459,7 +572,7 @@ Common Patterns
 
 .. code-block:: none
 
-   if(x < min; min; if(x > max; max; x))
+   clip(x; 0; 100)  # Clamp x to [0, 100]
 
 **Distance from mean in standard deviations:**
 
